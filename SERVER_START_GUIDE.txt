@@ -1,0 +1,254 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║              🚀 HOW TO START THE SERVER / سرور کیسے شروع کریں 🚀      ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+⚠️  IMPORTANT / اہم:
+═══════════════════════════════════════════════════════════════════════
+
+   Virtual environment MUST be activated before running server!
+   سرور چلانے سے پہلے ورچوئل انوائرمنٹ ایکٹیویٹ ہونا ضروری ہے!
+
+
+═══════════════════════════════════════════════════════════════════════
+METHOD 1: AUTOMATIC (EASIEST) / خودکار (سب سے آسان)
+═══════════════════════════════════════════════════════════════════════
+
+   Simply Double-Click: RUN_SERVER.bat
+   بس ڈبل کلک کریں: RUN_SERVER.bat
+
+   This will:
+   - Activate virtual environment automatically
+   - Start the server
+   - Show you the URLs
+   
+   یہ:
+   - خودکار طریقے سے ورچوئل انوائرمنٹ ایکٹیویٹ کرے گا
+   - سرور شروع کرے گا
+   - URLs دکھائے گا
+
+
+═══════════════════════════════════════════════════════════════════════
+METHOD 2: MANUAL (PowerShell)
+═══════════════════════════════════════════════════════════════════════
+
+   Step 1: Activate Virtual Environment
+   قدم ١: ورچوئل انوائرمنٹ ایکٹیویٹ کریں
+
+      .\venv\Scripts\Activate.ps1
+
+   ✅ Check: You should see (venv) in terminal
+      چیک: آپ کو ٹرمینل میں (venv) دیکھنا چاہیے
+
+   Example:
+      (venv) PS E:\Python.py\Hackaton project UBL>
+
+
+   Step 2: Start Server
+   قدم ٢: سرور شروع کریں
+
+      python manage.py runserver
+
+
+═══════════════════════════════════════════════════════════════════════
+METHOD 3: MANUAL (CMD)
+═══════════════════════════════════════════════════════════════════════
+
+   Step 1: Activate Virtual Environment
+
+      venv\Scripts\activate.bat
+
+   Step 2: Start Server
+
+      python manage.py runserver
+
+
+═══════════════════════════════════════════════════════════════════════
+✅ SUCCESS CHECK / کامیابی کی جانچ
+═══════════════════════════════════════════════════════════════════════
+
+   If server starts successfully, you will see:
+   اگر سرور کامیابی سے شروع ہو تو یہ دیکھیں گے:
+
+   ✓ Watching for file changes with StatReloader
+   ✓ Performing system checks...
+   ✓ System check identified no issues (0 silenced).
+   ✓ Starting development server at http://127.0.0.1:8000/
+   ✓ Quit the server with CTRL-BREAK.
+
+
+═══════════════════════════════════════════════════════════════════════
+🌐 URLs TO OPEN / URLs کھولیں
+═══════════════════════════════════════════════════════════════════════
+
+   After server starts / سرور شروع ہونے کے بعد:
+
+   📚 API Documentation (Swagger):
+      http://localhost:8000/api/docs/
+      ↑ Test APIs here! / یہاں APIs ٹیسٹ کریں!
+
+   ⚙️  Admin Panel:
+      http://localhost:8000/admin/
+      ↑ Manage data here! / یہاں ڈیٹا مینیج کریں!
+
+   🔌 API Base:
+      http://localhost:8000/api/
+
+
+═══════════════════════════════════════════════════════════════════════
+🛑 HOW TO STOP SERVER / سرور کیسے بند کریں
+═══════════════════════════════════════════════════════════════════════
+
+   Press: CTRL + C (or CTRL + BREAK)
+   دبائیں: CTRL + C
+
+
+═══════════════════════════════════════════════════════════════════════
+❌ COMMON ERRORS & SOLUTIONS / عام مسائل اور حل
+═══════════════════════════════════════════════════════════════════════
+
+   ERROR 1: "No module named 'django'"
+   
+   ❌ Problem: Virtual environment not activated
+      مسئلہ: ورچوئل انوائرمنٹ ایکٹیو نہیں
+   
+   ✅ Solution: Activate it first!
+      حل: پہلے ایکٹیویٹ کریں!
+      
+      .\venv\Scripts\Activate.ps1
+      
+   ---
+
+   ERROR 2: "Port is already in use"
+   
+   ❌ Problem: Port 8000 already being used
+      مسئلہ: پورٹ ٨٠٠٠ استعمال میں ہے
+   
+   ✅ Solution: Use different port
+      حل: مختلف پورٹ استعمال کریں
+      
+      python manage.py runserver 8001
+      
+   ---
+
+   ERROR 3: "cannot be loaded because running scripts is disabled"
+   
+   ❌ Problem: PowerShell execution policy
+      مسئلہ: PowerShell میں اسکرپٹس بند ہیں
+   
+   ✅ Solution: Run this command once
+      حل: یہ کمانڈ ایک بار چلائیں
+      
+      Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+      
+   ---
+
+   ERROR 4: Terminal shows PS> without (venv)
+   
+   ❌ Problem: Virtual environment NOT active
+      مسئلہ: ورچوئل انوائرمنٹ ایکٹیو نہیں
+   
+   ✅ Solution: Use RUN_SERVER.bat instead
+      حل: RUN_SERVER.bat استعمال کریں
+      
+   OR manually activate:
+   یا دستی طور پر ایکٹیویٹ کریں:
+      
+      .\venv\Scripts\Activate.ps1
+
+
+═══════════════════════════════════════════════════════════════════════
+🧪 QUICK API TEST / فوری API ٹیسٹ
+═══════════════════════════════════════════════════════════════════════
+
+   1. Start server (using RUN_SERVER.bat)
+      سرور شروع کریں
+
+   2. Open browser / براؤزر کھولیں:
+      http://localhost:8000/api/docs/
+
+   3. Click: POST /api/auth/register/
+      کلک کریں
+
+   4. Click: "Try it out"
+      کلک کریں
+
+   5. Enter data / ڈیٹا درج کریں:
+      {
+        "email": "test@example.com",
+        "username": "testuser",
+        "full_name": "Test User",
+        "password": "Test123!@#",
+        "password_confirm": "Test123!@#"
+      }
+
+   6. Click: "Execute"
+      کلک کریں
+
+   7. ✅ See result! / نتیجہ دیکھیں!
+
+
+═══════════════════════════════════════════════════════════════════════
+📱 OPTIONAL: CREATE ADMIN USER / اختیاری: ایڈمن یوزر بنائیں
+═══════════════════════════════════════════════════════════════════════
+
+   In a NEW terminal / نئے ٹرمینل میں:
+   (Keep server running in first terminal)
+   (پہلے ٹرمینل میں سرور چلتا رہنے دیں)
+
+   1. Activate virtual environment:
+      .\venv\Scripts\Activate.ps1
+
+   2. Create superuser:
+      python manage.py createsuperuser
+
+   3. Enter details:
+      - Email: admin@example.com
+      - Username: admin
+      - Full Name: Admin User
+      - Password: (strong password)
+
+   4. Access admin panel:
+      http://localhost:8000/admin/
+
+
+═══════════════════════════════════════════════════════════════════════
+💡 PRO TIPS / خاص تجاویز
+═══════════════════════════════════════════════════════════════════════
+
+   ✓ Always activate venv BEFORE running any command
+     کسی بھی کمانڈ سے پہلے ہمیشہ venv ایکٹیویٹ کریں
+     
+   ✓ Use RUN_SERVER.bat - it's the easiest!
+     RUN_SERVER.bat استعمال کریں - سب سے آسان!
+     
+   ✓ Swagger UI = Easiest way to test APIs
+     Swagger UI = APIs ٹیسٹ کرنے کا آسان ترین طریقہ
+     
+   ✓ Keep terminal open while server runs
+     جب تک سرور چل رہا ہو ٹرمینل کھلا رکھیں
+     
+   ✓ Check terminal for logs and errors
+     لاگز اور ایررز کے لیے ٹرمینل دیکھیں
+
+
+═══════════════════════════════════════════════════════════════════════
+📂 HELPFUL FILES / مددگار فائلیں
+═══════════════════════════════════════════════════════════════════════
+
+   RUN_SERVER.bat      - Start server automatically
+   START.bat           - Complete setup + start server
+   SUCCESS.txt         - Success guide
+   HOW_TO_START.txt    - Quick reference
+   SETUP_URDU.md       - Detailed Urdu guide
+   API_GUIDE.md        - API usage examples
+
+
+═══════════════════════════════════════════════════════════════════════
+
+Ready? Double-click: RUN_SERVER.bat
+
+تیار؟ ڈبل کلک کریں: RUN_SERVER.bat
+
+═══════════════════════════════════════════════════════════════════════

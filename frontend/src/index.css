@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a1628;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-form-panel {
+    width: 100% !important;
+    min-height: auto !important;
+    border-left: none !important;
+    border-top: 1px solid rgba(56,189,248,0.12) !important;
+  }
+}

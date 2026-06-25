@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     # Third Party
     'rest_framework',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',  # Add this for token blacklisting
     'corsheaders',
     'django_filters',
     'drf_spectacular',
@@ -130,9 +131,15 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'config.exceptions.custom_exception_handler',
 }
 
+# Authentication Backends
+AUTHENTICATION_BACKENDS = [
+    'apps.authentication.backends.EmailBackend',  # Custom email authentication
+    'django.contrib.auth.backends.ModelBackend',  # Fallback
+]
+
 # JWT Settings
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=config('JWT_ACCESS_TOKEN_LIFETIME', default=15, cast=int)),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=config('JWT_ACCESS_TOKEN_LIFETIME', default=60, cast=int)),
     'REFRESH_TOKEN_LIFETIME': timedelta(minutes=config('JWT_REFRESH_TOKEN_LIFETIME', default=1440, cast=int)),
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
@@ -143,6 +150,8 @@ SIMPLE_JWT = {
     'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'TOKEN_TYPE_CLAIM': 'token_type',
 }
 
 # CORS Settings

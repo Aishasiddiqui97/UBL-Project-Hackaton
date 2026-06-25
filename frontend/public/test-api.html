@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #0f172a;
+            color: white;
+        }
+        .section {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        pre {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid #334155;
+        }
+        .success { color: #4ade80; }
+        .error { color: #f87171; }
+        input {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 Backend API Test Tool</h1>
+    
+    <div class="section">
+        <h2>1. Login Test</h2>
+        <input type="email" id="email" value="admin@example.com" placeholder="Email">
+        <input type="password" id="password" value="admin123" placeholder="Password">
+        <button onclick="testLogin()">Test Login</button>
+        <div id="loginResult"></div>
+    </div>
+
+    <div class="section">
+        <h2>2. Get Transactions</h2>
+        <button onclick="getTransactions()">Fetch Transactions</button>
+        <div id="transactionsResult"></div>
+    </div>
+
+    <div class="section">
+        <h2>3. Create Transaction</h2>
+        <button onclick="createTransaction()">Create Test Transaction</button>
+        <div id="createResult"></div>
+    </div>
+
+    <script>
+        let authToken = null;
+
+        async function testLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const resultDiv = document.getElementById('loginResult');
+            
+            resultDiv.innerHTML = '<p>Loading...</p>';
+            
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/login/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    authToken = data.data.access_token;
+                    resultDiv.innerHTML = `
+                        <p class="success">✅ Login Successful!</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <p class="error">❌ Login Failed</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<p class="error">❌ Error: ${error.message}</p>`;
+            }
+        }
+
+        async function getTransactions() {
+            const resultDiv = document.getElementById('transactionsResult');
+            
+            if (!authToken) {
+                resultDiv.innerHTML = '<p class="error">❌ Please login first!</p>';
+                return;
+            }
+            
+            resultDiv.innerHTML = '<p>Loading...</p>';
+            
+            try {
+                const response = await fetch('http://localhost:8000/api/transactions/', {
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    const count = data.results ? data.results.length : 0;
+                    resultDiv.innerHTML = `
+                        <p class="success">✅ Fetched ${count} transactions</p>
+                        <p>Total: ${data.count || 'N/A'}</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <p class="error">❌ Failed to fetch</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<p class="error">❌ Error: ${error.message}</p>`;
+            }
+        }
+
+        async function createTransaction() {
+            const resultDiv = document.getElementById('createResult');
+            
+            if (!authToken) {
+                resultDiv.innerHTML = '<p class="error">❌ Please login first!</p>';
+                return;
+            }
+            
+            resultDiv.innerHTML = '<p>Creating...</p>';
+            
+            const transactionData = {
+                transaction_type: 'DEBIT',
+                amount: '50000.00',
+                account_number: `ACC-TEST-${Date.now()}`,
+                description: 'Test transaction from web UI',
+                location: 'Karachi'
+            };
+            
+            try {
+                const response = await fetch('http://localhost:8000/api/transactions/', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(transactionData)
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok || response.status === 201) {
+                    resultDiv.innerHTML = `
+                        <p class="success">✅ Transaction Created!</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <p class="error">❌ Creation Failed</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<p class="error">❌ Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

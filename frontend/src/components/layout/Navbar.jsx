@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
+import { useAuth } from "../../context/AuthContext";
 import { Search, Bell, Sun, Moon, User, Settings, LogOut, Menu } from "lucide-react";
 
 const Navbar = ({ title = "Dashboard", onMenuClick }) => {
@@ -9,6 +10,7 @@ const Navbar = ({ title = "Dashboard", onMenuClick }) => {
   const [showNotif, setShowNotif] = useState(false);
   const [showUser, setShowUser] = useState(false);
   const { isDark, toggle, navBg, surface, border, text, subtext, accent } = useTheme();
+  const { logout, user } = useAuth();
 
   const now = new Date().toLocaleDateString("en-US", {
     weekday: "long", year: "numeric", month: "long", day: "numeric"
@@ -20,8 +22,8 @@ const Navbar = ({ title = "Dashboard", onMenuClick }) => {
     { id: 3, text: "Case CS001 updated", time: "1 hr ago", color: accent },
   ];
 
-  const handleLogout = () => {
-    localStorage.removeItem("isAuthenticated");
+  const handleLogout = async () => {
+    await logout();
     navigate("/login");
   };
 
@@ -120,10 +122,16 @@ const Navbar = ({ title = "Dashboard", onMenuClick }) => {
         <div style={{ position: "relative" }}>
           <div onClick={() => { setShowUser(!showUser); setShowNotif(false); }}
             style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer", background: surface, border: `1px solid ${border}`, borderRadius: "8px", padding: "6px 12px", transition: "all 0.3s" }}>
-            <div style={{ width: "28px", height: "28px", background: "#2563eb", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: "700", fontSize: "13px" }}>A</div>
+            <div style={{ width: "28px", height: "28px", background: "#2563eb", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: "700", fontSize: "13px" }}>
+              {user?.first_name ? user.first_name.charAt(0).toUpperCase() : "A"}
+            </div>
             <div className="nav-date">
-              <div style={{ color: text, fontSize: "13px", fontWeight: "600" }}>Admin</div>
-              <div style={{ color: subtext, fontSize: "11px" }}>Super Admin</div>
+              <div style={{ color: text, fontSize: "13px", fontWeight: "600" }}>
+                {user?.first_name || "Admin"}
+              </div>
+              <div style={{ color: subtext, fontSize: "11px" }}>
+                {user?.role || "Super Admin"}
+              </div>
             </div>
           </div>
           {showUser && (

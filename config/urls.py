@@ -3,10 +3,52 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse, HttpResponse
+from django.shortcuts import redirect
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
+def api_root(request):
+    """API root endpoint showing available endpoints."""
+    return JsonResponse({
+        'message': 'Welcome to Backend API',
+        'version': '1.0.0',
+        'endpoints': {
+            'authentication': '/api/auth/',
+            'users': '/api/users/',
+            'products': '/api/products/',
+            'orders': '/api/orders/',
+            'payments': '/api/payments/',
+            'transactions': '/api/transactions/',
+            'notifications': '/api/notifications/',
+            'documentation': '/api/docs/',
+            'admin': '/admin/'
+        }
+    })
+
+def root_redirect(request):
+    """Redirect root URL to API docs."""
+    return redirect('/api/docs/')
+
+def health_check(request):
+    """Health check endpoint."""
+    return JsonResponse({
+        'status': 'OK',
+        'message': 'Backend API is running',
+        'version': '1.0.0'
+    })
+
 urlpatterns = [
+    # Root URL redirect
+    path('', root_redirect, name='root-redirect'),
+    
+    # Health check
+    path('health/', health_check, name='health-check'),
+    
+    # Admin
     path('admin/', admin.site.urls),
+    
+    # API Root
+    path('api/', api_root, name='api-root'),
     
     # API Documentation
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),

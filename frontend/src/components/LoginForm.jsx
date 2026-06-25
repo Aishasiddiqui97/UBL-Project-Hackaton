@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -9,17 +10,43 @@ const LoginForm = () => {
   const [showPass, setShowPass] = useState(false);
   const [focused, setFocused] = useState("");
   const navigate = useNavigate();
+  const { login } = useAuth();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    if (!email || !password) { setError("Please fill in all fields."); return; }
+    
+    if (!email || !password) { 
+      setError("Please fill in all fields."); 
+      return; 
+    }
+    
+    // Clear any existing error state
+    console.log('Form submitted, clearing localStorage...');
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('isAuthenticated');
+    localStorage.removeItem('user');
+    
     setLoading(true);
-    setTimeout(() => {
+    
+    try {
+      console.log('Attempting login with:', { email, password: '***' });
+      const result = await login(email, password);
+      
+      if (result.success) {
+        console.log('Login successful, navigating to dashboard');
+        navigate("/dashboard");
+      } else {
+        console.error('Login failed:', result.error);
+        setError(result.error || "Login failed. Please check your credentials.");
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      setError(error.message || "Network error. Please check your connection and try again.");
+    } finally {
       setLoading(false);
-      localStorage.setItem("isAuthenticated", "true");
-      navigate("/dashboard");
-    }, 1400);
+    }
   };
 
   const inputStyle = (key) => ({

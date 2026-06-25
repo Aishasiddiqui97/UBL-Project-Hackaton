@@ -1,0 +1,1600 @@
+INFO 2026-06-17 00:41:52,688 autoreload 10152 8240 Watching for file changes with StatReloader
+INFO 2026-06-17 00:48:06,222 autoreload 11808 10032 Watching for file changes with StatReloader
+INFO 2026-06-17 00:58:58,962 autoreload 3248 3788 Watching for file changes with StatReloader
+INFO 2026-06-17 01:00:42,691 autoreload 11072 13240 Watching for file changes with StatReloader
+INFO 2026-06-17 01:01:28,840 basehttp 3248 13296 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:01:31,259 basehttp 3248 13296 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:01:48,753 basehttp 3248 13296 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 01:01:49,088 basehttp 3248 13296 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 01:01:49,829 basehttp 3248 7508 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-06-17 01:01:49,838 basehttp 3248 7212 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2026-06-17 01:01:49,864 basehttp 3248 13296 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2026-06-17 01:01:49,939 basehttp 3248 13200 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2026-06-17 01:01:50,106 basehttp 3248 7664 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2026-06-17 01:01:50,107 basehttp 3248 7212 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-06-17 01:01:50,251 basehttp 3248 11508 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+WARNING 2026-06-17 01:01:51,440 log 3248 11508 Not Found: /favicon.ico
+WARNING 2026-06-17 01:01:51,441 basehttp 3248 11508 "GET /favicon.ico HTTP/1.1" 404 3532
+WARNING 2026-06-17 01:01:59,205 log 3248 11508 Not Found: /api/
+WARNING 2026-06-17 01:01:59,206 basehttp 3248 11508 "GET /api/ HTTP/1.1" 404 3511
+INFO 2026-06-17 01:02:09,283 basehttp 3248 10580 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:02:11,627 basehttp 3248 10580 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:03:36,536 basehttp 3248 11508 "POST /api/auth/register/ HTTP/1.1" 201 263
+WARNING 2026-06-17 01:04:14,523 log 3248 9536 Not Found: /
+WARNING 2026-06-17 01:04:14,529 basehttp 3248 9536 "GET / HTTP/1.1" 404 3481
+WARNING 2026-06-17 01:04:15,630 log 3248 9536 Not Found: /favicon.ico
+WARNING 2026-06-17 01:04:15,639 basehttp 3248 9536 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-17 01:04:19,664 basehttp 3248 5824 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:04:21,243 basehttp 3248 5824 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:04:24,142 basehttp 3248 5824 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 01:04:24,166 basehttp 3248 5824 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 01:04:24,582 basehttp 3248 5824 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2026-06-17 01:04:24,598 basehttp 3248 6028 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2026-06-17 01:04:24,598 basehttp 3248 12716 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-06-17 01:04:24,621 basehttp 3248 6028 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2026-06-17 01:04:24,621 basehttp 3248 5824 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2026-06-17 01:04:24,622 basehttp 3248 12716 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2026-06-17 01:04:24,726 basehttp 3248 6028 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-06-17 01:04:25,221 log 3248 6028 Not Found: /favicon.ico
+WARNING 2026-06-17 01:04:25,237 basehttp 3248 6028 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-17 01:07:23,427 basehttp 3248 6028 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 01:07:23,541 basehttp 3248 6028 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 01:07:54,546 basehttp 3248 11508 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 01:07:54,653 basehttp 3248 11508 "GET /admin/ HTTP/1.1" 200 10869
+INFO 2026-06-17 01:07:54,715 basehttp 3248 14320 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,729 basehttp 3248 14320 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,747 basehttp 3248 11508 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-06-17 01:07:54,752 basehttp 3248 14320 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,767 basehttp 3248 11508 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,771 basehttp 3248 14320 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,799 basehttp 3248 11508 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:07:54,870 basehttp 3248 11508 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-06-17 01:07:54,878 basehttp 3248 14320 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-06-17 01:21:33,445 autoreload 11636 6008 Watching for file changes with StatReloader
+INFO 2026-06-17 01:21:53,200 basehttp 11636 5704 "GET /admin/ HTTP/1.1" 200 10869
+INFO 2026-06-17 01:21:53,335 basehttp 11636 5704 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,344 basehttp 11636 13240 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,345 basehttp 11636 13752 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,357 basehttp 11636 5704 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,363 basehttp 11636 13240 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,364 basehttp 11636 13752 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,475 basehttp 11636 5704 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,479 basehttp 11636 13240 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-06-17 01:21:53,543 basehttp 11636 13752 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:22:08,426 basehttp 11636 13752 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:22:09,777 basehttp 11636 13752 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:22:39,878 basehttp 11636 14068 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:22:40,825 basehttp 11636 14068 "GET /api/schema/ HTTP/1.1" 200 104182
+WARNING 2026-06-17 01:23:00,343 log 11636 13752 Not Found: /api/
+WARNING 2026-06-17 01:23:00,425 basehttp 11636 13752 "GET /api/ HTTP/1.1" 404 3511
+WARNING 2026-06-17 01:25:12,812 log 11636 3000 Not Found: /api/
+WARNING 2026-06-17 01:25:12,814 basehttp 11636 3000 "GET /api/ HTTP/1.1" 404 3511
+WARNING 2026-06-17 01:25:13,234 log 11636 3000 Not Found: /favicon.ico
+WARNING 2026-06-17 01:25:13,241 basehttp 11636 3000 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-17 01:31:02,983 basehttp 11636 10384 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:31:05,067 basehttp 11636 10384 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:32:31,273 basehttp 11636 10384 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 01:32:32,094 basehttp 11636 10384 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 01:32:51,302 basehttp 11636 10384 "POST /admin/logout/ HTTP/1.1" 200 3553
+INFO 2026-06-17 01:32:51,371 basehttp 11636 10384 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:51,374 basehttp 11636 10384 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:51,379 basehttp 11636 10384 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:51,403 basehttp 11636 10384 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:51,410 basehttp 11636 10384 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:51,488 basehttp 11636 12616 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-06-17 01:32:54,948 basehttp 11636 12616 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 01:32:55,042 basehttp 11636 12616 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 01:32:55,122 basehttp 11636 12616 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:03,267 autoreload 9452 3564 Watching for file changes with StatReloader
+INFO 2026-06-17 21:11:08,742 basehttp 9452 2404 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-17 21:11:09,669 basehttp 9452 2404 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-17 21:11:19,035 basehttp 9452 2404 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 21:11:20,855 basehttp 9452 2404 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 21:11:21,054 basehttp 9452 12904 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,055 basehttp 9452 2404 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,063 basehttp 9452 2404 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,063 basehttp 9452 12904 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,077 basehttp 9452 2404 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,098 basehttp 9452 2404 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:21,099 basehttp 9452 12904 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2026-06-17 21:11:21,371 log 9452 12904 Not Found: /favicon.ico
+WARNING 2026-06-17 21:11:21,372 basehttp 9452 12904 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-17 21:11:47,725 basehttp 9452 5660 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-17 21:11:47,878 basehttp 9452 5660 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,882 basehttp 9452 2044 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,901 basehttp 9452 5660 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,905 basehttp 9452 2044 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,907 basehttp 9452 5660 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,949 basehttp 9452 2044 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:47,958 basehttp 9452 5660 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2026-06-17 21:11:48,984 log 9452 5660 Not Found: /favicon.ico
+WARNING 2026-06-17 21:11:48,986 basehttp 9452 5660 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-17 21:11:52,858 basehttp 9452 5660 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-06-17 21:11:52,957 basehttp 9452 5660 "GET /admin/ HTTP/1.1" 200 10869
+INFO 2026-06-17 21:11:53,003 basehttp 9452 5660 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:53,031 basehttp 9452 5660 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-06-17 21:11:53,031 basehttp 9452 2044 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2026-06-17 21:11:55,599 log 9452 12904 Not Found: /api/
+WARNING 2026-06-17 21:11:55,600 basehttp 9452 12904 "GET /api/ HTTP/1.1" 404 3511
+INFO 2026-06-18 00:10:29,243 autoreload 10508 9412 Watching for file changes with StatReloader
+INFO 2026-06-18 00:10:31,492 basehttp 10508 11684 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-18 00:10:33,097 basehttp 10508 11684 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-18 00:10:44,244 basehttp 10508 11684 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-18 00:10:44,509 basehttp 10508 11684 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-18 00:10:44,581 basehttp 10508 9128 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,582 basehttp 10508 11684 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,588 basehttp 10508 11684 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,652 basehttp 10508 9128 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,658 basehttp 10508 11684 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,692 basehttp 10508 11684 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:44,693 basehttp 10508 9128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2026-06-18 00:10:44,877 log 10508 9128 Not Found: /favicon.ico
+WARNING 2026-06-18 00:10:44,878 basehttp 10508 9128 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-18 00:10:54,204 basehttp 10508 13568 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-06-18 00:10:54,311 basehttp 10508 13568 "GET /admin/ HTTP/1.1" 200 10869
+INFO 2026-06-18 00:10:54,463 basehttp 10508 7832 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,463 basehttp 10508 13568 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,489 basehttp 10508 7832 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,507 basehttp 10508 7740 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,532 basehttp 10508 13568 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,679 basehttp 10508 7832 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,682 basehttp 10508 7740 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,744 basehttp 10508 13568 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-06-18 00:10:54,770 basehttp 10508 7832 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2026-06-18 00:10:56,092 log 10508 7832 Not Found: /favicon.ico
+WARNING 2026-06-18 00:10:56,097 basehttp 10508 7832 "GET /favicon.ico HTTP/1.1" 404 3532
+WARNING 2026-06-18 00:10:59,504 log 10508 9128 Not Found: /api/
+WARNING 2026-06-18 00:10:59,506 basehttp 10508 9128 "GET /api/ HTTP/1.1" 404 3511
+WARNING 2026-06-18 00:11:10,157 log 10508 7832 Not Found: /api/
+WARNING 2026-06-18 00:11:10,159 basehttp 10508 7832 "GET /api/ HTTP/1.1" 404 3511
+INFO 2026-06-18 00:11:20,947 basehttp 10508 7832 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-18 00:11:22,527 basehttp 10508 7832 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-18 00:37:50,416 basehttp 10508 11068 "POST /admin/logout/ HTTP/1.1" 200 3553
+INFO 2026-06-18 00:39:20,152 autoreload 384 7024 Watching for file changes with StatReloader
+INFO 2026-06-18 00:39:24,680 basehttp 384 14500 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-18 00:39:25,232 basehttp 384 14500 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-18 00:39:26,666 basehttp 384 14500 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-18 00:39:31,252 basehttp 384 14500 "GET /api/schema/ HTTP/1.1" 200 104182
+WARNING 2026-06-18 00:39:35,795 log 384 14500 Not Found: /favicon.ico
+WARNING 2026-06-18 00:39:35,817 basehttp 384 14500 "GET /favicon.ico HTTP/1.1" 404 3532
+WARNING 2026-06-18 00:39:56,486 log 384 14500 Not Found: /api/
+WARNING 2026-06-18 00:39:56,631 basehttp 384 14500 "GET /api/ HTTP/1.1" 404 3511
+INFO 2026-06-18 01:08:58,025 autoreload 9200 11680 Watching for file changes with StatReloader
+WARNING 2026-06-18 01:09:05,089 log 9200 15916 Not Found: /api/
+WARNING 2026-06-18 01:09:05,150 basehttp 9200 15916 "GET /api/ HTTP/1.1" 404 3511
+WARNING 2026-06-18 01:09:08,097 log 9200 15916 Not Found: /favicon.ico
+WARNING 2026-06-18 01:09:08,099 basehttp 9200 15916 "GET /favicon.ico HTTP/1.1" 404 3532
+INFO 2026-06-22 20:05:00,874 autoreload 6388 8252 Watching for file changes with StatReloader
+INFO 2026-06-22 20:05:11,550 basehttp 6388 3312 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-22 20:05:13,425 basehttp 6388 4772 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-22 20:05:30,070 basehttp 6388 13996 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-22 20:05:31,757 basehttp 6388 13996 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-22 20:05:31,862 basehttp 6388 13996 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,862 basehttp 6388 5432 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,863 basehttp 6388 12712 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,894 basehttp 6388 5432 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,896 basehttp 6388 13996 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,904 basehttp 6388 12712 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-06-22 20:05:31,966 basehttp 6388 12712 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2026-06-22 20:05:32,357 log 6388 12712 Not Found: /favicon.ico
+WARNING 2026-06-22 20:05:32,360 basehttp 6388 12712 "GET /favicon.ico HTTP/1.1" 404 3532
+WARNING 2026-06-22 20:05:44,626 log 6388 12712 Not Found: /api/
+WARNING 2026-06-22 20:05:44,664 basehttp 6388 12712 "GET /api/ HTTP/1.1" 404 3511
+INFO 2026-06-22 20:06:17,250 autoreload 6388 8252 E:\Python.py\Hackaton project UBL\config\urls.py changed, reloading.
+INFO 2026-06-22 20:06:19,280 autoreload 9468 12580 Watching for file changes with StatReloader
+INFO 2026-06-22 20:07:49,431 basehttp 9468 9472 "GET /api/ HTTP/1.1" 200 343
+WARNING 2026-06-22 20:08:05,708 log 9468 9472 Not Found: /api/auth/
+WARNING 2026-06-22 20:08:05,720 basehttp 9468 9472 "GET /api/auth/ HTTP/1.1" 404 4670
+INFO 2026-06-22 20:09:58,652 basehttp 9468 12820 "GET /api/ HTTP/1.1" 200 343
+INFO 2026-06-22 20:10:26,448 autoreload 8932 1384 Watching for file changes with StatReloader
+INFO 2026-06-22 20:10:27,940 basehttp 8932 4792 "GET /api/ HTTP/1.1" 200 343
+INFO 2026-06-22 20:10:43,052 basehttp 8932 10920 "GET /api/ HTTP/1.1" 200 343
+WARNING 2026-06-22 20:10:43,298 log 8932 10920 Not Found: /favicon.ico
+WARNING 2026-06-22 20:10:43,300 basehttp 8932 10920 "GET /favicon.ico HTTP/1.1" 404 3653
+INFO 2026-06-22 20:10:49,395 basehttp 8932 10920 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-22 20:10:49,565 basehttp 8932 10920 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4155
+INFO 2026-06-22 20:10:54,436 basehttp 8932 10920 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-22 20:10:55,421 basehttp 8932 10920 "GET /api/schema/ HTTP/1.1" 200 104182
+INFO 2026-06-22 20:11:34,497 basehttp 8932 7312 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-06-22 20:11:34,615 log 8932 7312 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:11:34,630 basehttp 8932 7312 "POST /api/auth/login/ HTTP/1.1" 401 82
+WARNING 2026-06-22 20:11:59,998 log 8932 7312 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:11:59,999 basehttp 8932 7312 "POST /api/auth/login/ HTTP/1.1" 401 82
+INFO 2026-06-22 20:12:56,227 autoreload 8932 1384 E:\Python.py\Hackaton project UBL\config\settings.py changed, reloading.
+INFO 2026-06-22 20:13:01,261 autoreload 9980 2348 Watching for file changes with StatReloader
+INFO 2026-06-22 20:13:07,678 autoreload 9980 2348 E:\Python.py\Hackaton project UBL\config\settings.py changed, reloading.
+INFO 2026-06-22 20:13:09,803 autoreload 5212 8860 Watching for file changes with StatReloader
+INFO 2026-06-22 20:13:17,273 autoreload 5212 8860 E:\Python.py\Hackaton project UBL\config\settings.py changed, reloading.
+INFO 2026-06-22 20:13:20,375 autoreload 8228 12052 Watching for file changes with StatReloader
+WARNING 2026-06-22 20:15:53,563 log 8228 13212 Bad Request: /api/auth/login/
+WARNING 2026-06-22 20:15:53,564 basehttp 8228 13212 "POST /api/auth/login/ HTTP/1.1" 400 100
+INFO 2026-06-22 20:16:13,167 autoreload 11052 7668 Watching for file changes with StatReloader
+WARNING 2026-06-22 20:16:32,017 log 8228 9656 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:16:32,249 basehttp 8228 9656 "POST /api/auth/login/ HTTP/1.1" 401 82
+WARNING 2026-06-22 20:16:45,649 log 8228 3616 Bad Request: /api/auth/login/
+WARNING 2026-06-22 20:16:45,650 basehttp 8228 3616 "POST /api/auth/login/ HTTP/1.1" 400 100
+INFO 2026-06-22 20:18:38,391 basehttp 8228 11792 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-22 20:18:50,860 log 8228 9656 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:18:50,906 basehttp 8228 9656 "POST /api/auth/login/ HTTP/1.1" 401 82
+INFO 2026-06-22 20:19:58,099 autoreload 9272 12660 Watching for file changes with StatReloader
+WARNING 2026-06-22 20:20:32,186 log 9272 964 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:20:32,189 basehttp 9272 964 "POST /api/auth/login/ HTTP/1.1" 401 82
+WARNING 2026-06-22 20:21:00,584 log 9272 964 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:21:00,586 basehttp 9272 964 "POST /api/auth/login/ HTTP/1.1" 401 82
+WARNING 2026-06-22 20:21:06,512 log 9272 964 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:21:06,519 basehttp 9272 964 "POST /api/auth/login/ HTTP/1.1" 401 82
+WARNING 2026-06-22 20:21:34,456 log 9272 964 Unauthorized: /api/auth/login/
+WARNING 2026-06-22 20:21:34,463 basehttp 9272 964 "POST /api/auth/login/ HTTP/1.1" 401 82
+INFO 2026-06-22 20:26:27,610 basehttp 9272 964 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-22 20:37:05,646 basehttp 9272 5828 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-22 20:37:57,342 basehttp 9272 11780 "GET /api/ HTTP/1.1" 200 343
+INFO 2026-06-22 20:41:25,217 autoreload 13216 12900 Watching for file changes with StatReloader
+INFO 2026-06-22 20:41:47,197 basehttp 13216 7428 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-22 20:41:55,151 basehttp 13216 7428 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 13:13:36,632 autoreload 6080 5984 Watching for file changes with StatReloader
+WARNING 2026-06-24 13:13:44,737 log 6080 5048 Not Found: /
+WARNING 2026-06-24 13:13:44,739 basehttp 6080 5048 "GET / HTTP/1.1" 404 3602
+WARNING 2026-06-24 13:13:44,956 log 6080 5048 Not Found: /favicon.ico
+WARNING 2026-06-24 13:13:44,966 basehttp 6080 5048 "GET /favicon.ico HTTP/1.1" 404 3653
+INFO 2026-06-24 13:17:43,219 autoreload 6080 5984 E:\Python.py\Hackaton project UBL\config\urls.py changed, reloading.
+INFO 2026-06-24 13:17:47,218 autoreload 8628 10500 Watching for file changes with StatReloader
+INFO 2026-06-24 13:18:36,794 autoreload 8628 10500 E:\Python.py\Hackaton project UBL\apps\transactions\models.py changed, reloading.
+INFO 2026-06-24 13:18:39,313 autoreload 7912 6236 Watching for file changes with StatReloader
+INFO 2026-06-24 13:19:06,918 autoreload 7912 6236 E:\Python.py\Hackaton project UBL\apps\transactions\serializers.py changed, reloading.
+INFO 2026-06-24 13:19:09,309 autoreload 1368 6876 Watching for file changes with StatReloader
+INFO 2026-06-24 13:19:57,842 autoreload 1368 6876 E:\Python.py\Hackaton project UBL\apps\transactions\views.py changed, reloading.
+INFO 2026-06-24 13:20:01,324 autoreload 8112 10716 Watching for file changes with StatReloader
+INFO 2026-06-24 13:20:58,200 autoreload 8112 10716 E:\Python.py\Hackaton project UBL\apps\users\permissions.py changed, reloading.
+INFO 2026-06-24 13:21:00,195 autoreload 976 4812 Watching for file changes with StatReloader
+WARNING 2026-06-24 13:27:04,831 log 976 13272 Unauthorized: /api/transactions/
+WARNING 2026-06-24 13:27:04,833 basehttp 976 13272 "GET /api/transactions/ HTTP/1.1" 401 82
+INFO 2026-06-24 13:27:23,080 basehttp 976 13272 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 13:27:23,205 basehttp 976 13272 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 13:27:41,098 basehttp 976 13272 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 13:27:41,107 basehttp 976 13272 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 14:30:36,151 basehttp 976 444 "GET /api/ HTTP/1.1" 200 343
+WARNING 2026-06-24 14:30:36,979 log 976 444 Not Found: /favicon.ico
+WARNING 2026-06-24 14:30:36,981 basehttp 976 444 "GET /favicon.ico HTTP/1.1" 404 3903
+INFO 2026-06-24 14:30:44,690 basehttp 976 7484 "GET / HTTP/1.1" 302 0
+INFO 2026-06-24 14:30:44,997 basehttp 976 7484 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-24 14:30:46,573 basehttp 976 7484 "GET /api/schema/ HTTP/1.1" 200 136870
+INFO 2026-06-24 14:31:56,636 basehttp 976 9756 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:08,420 basehttp 976 9756 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 14:32:46,747 basehttp 976 9756 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:46,770 basehttp 976 9756 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:46,773 basehttp 976 14976 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:46,781 basehttp 976 9756 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:46,801 basehttp 976 9756 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 14:32:46,809 log 976 14976 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 14:32:46,816 basehttp 976 14976 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 14:32:46,820 basehttp 976 9756 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 14:32:46,830 log 976 14976 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 14:32:46,831 basehttp 976 14976 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 14:32:47,997 basehttp 976 14976 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:48,018 basehttp 976 9756 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:48,019 basehttp 976 9988 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:48,019 basehttp 976 14612 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-24 14:32:48,038 basehttp 976 14976 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 14:32:48,268 basehttp 976 9988 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 14:32:48,275 basehttp 976 9756 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 14:32:48,314 basehttp 976 9988 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+WARNING 2026-06-24 14:33:06,371 log 976 9988 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 14:33:06,372 basehttp 976 9988 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-24 14:33:06,389 log 976 9988 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 14:33:06,394 basehttp 976 9756 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 14:33:06,395 basehttp 976 9988 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 14:33:06,441 basehttp 976 9988 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 14:33:11,803 log 976 9988 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 14:33:11,820 basehttp 976 9988 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 14:33:11,835 basehttp 976 9756 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 14:33:11,855 log 976 9756 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 14:33:11,858 basehttp 976 9756 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 14:33:11,868 basehttp 976 9988 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+INFO 2026-06-24 14:33:16,740 basehttp 976 9988 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 14:33:16,761 basehttp 976 9756 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 14:33:16,793 basehttp 976 9988 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 14:33:16,798 basehttp 976 9756 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:26:35,840 autoreload 13048 6764 Watching for file changes with StatReloader
+INFO 2026-06-24 16:27:13,821 basehttp 13048 6192 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-24 16:27:34,319 basehttp 13048 6192 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 16:27:43,851 basehttp 13048 6192 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-24 16:27:43,851 basehttp 13048 12704 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-24 16:27:43,863 basehttp 13048 12704 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-24 16:27:43,863 basehttp 13048 6192 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-24 16:27:43,919 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:27:43,929 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:27:43,942 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:27:43,950 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:28:13,880 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:28:13,886 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:28:44,266 basehttp 13048 12704 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:28:44,269 basehttp 13048 6192 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:29:14,267 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:29:14,271 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:29:44,298 basehttp 13048 12704 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:29:44,303 basehttp 13048 6192 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:30:14,266 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:30:14,273 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:30:16,939 basehttp 13048 2424 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 16:30:16,992 basehttp 13048 2424 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:30:44,277 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:30:44,281 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:31:02,324 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:31:02,329 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:31:09,321 basehttp 13048 12704 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:31:09,324 basehttp 13048 6192 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:31:16,302 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:31:16,307 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:31:46,392 basehttp 13048 6192 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:31:46,398 basehttp 13048 12704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:32:09,700 basehttp 13048 6384 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-24 16:32:11,763 log 13048 5288 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:32:11,764 basehttp 13048 5288 "POST /api/transactions/ HTTP/1.1" 400 97
+INFO 2026-06-24 16:32:17,379 basehttp 13048 12704 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:32:17,405 basehttp 13048 6192 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:32:43,474 autoreload 13048 6764 E:\Python.py\Hackaton project UBL\apps\transactions\serializers.py changed, reloading.
+INFO 2026-06-24 16:32:50,931 autoreload 1368 6068 Watching for file changes with StatReloader
+INFO 2026-06-24 16:33:09,328 basehttp 1368 12916 "POST /api/auth/login/ HTTP/1.1" 200 760
+ERROR 2026-06-24 16:33:14,720 log 1368 12440 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 48, in perform_create
+    serializer.save(
+    ~~~~~~~~~~~~~~~^
+        user=self.request.user,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        reference=reference,
+        ^^^^^^^^^^^^^^^^^^^^
+        ip_address=ip_address
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 1011, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\models.py", line 74, in save
+    self.fraud_probability = self.calculate_fraud_probability()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\models.py", line 101, in calculate_fraud_probability
+    hour = self.created_at.hour if hasattr(self, 'created_at') else 12
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'hour'
+ERROR 2026-06-24 16:33:14,734 basehttp 1368 12440 "POST /api/transactions/ HTTP/1.1" 500 143625
+INFO 2026-06-24 16:33:18,204 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:33:18,231 basehttp 1368 6764 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:33:47,280 basehttp 1368 6764 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:33:47,283 basehttp 1368 5604 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:34:32,285 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:34:32,289 basehttp 1368 6764 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:34:47,278 basehttp 1368 6764 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:34:47,280 basehttp 1368 5604 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:35:17,274 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:35:17,278 basehttp 1368 6764 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:35:29,211 basehttp 1368 9276 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-24 16:35:29,229 basehttp 1368 9276 "GET /api/transactions/?page_size=5 HTTP/1.1" 200 4577
+INFO 2026-06-24 16:35:46,400 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:35:46,419 basehttp 1368 6764 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:36:17,262 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:36:17,332 basehttp 1368 5604 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:36:46,316 basehttp 1368 5604 "GET /api/transactions/ HTTP/1.1" 200 4565
+INFO 2026-06-24 16:36:46,317 basehttp 1368 6764 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:36:52,910 autoreload 1368 6068 E:\Python.py\Hackaton project UBL\apps\transactions\models.py changed, reloading.
+INFO 2026-06-24 16:36:55,006 autoreload 10020 12304 Watching for file changes with StatReloader
+INFO 2026-06-24 16:37:17,055 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:37:17,068 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4558
+INFO 2026-06-24 16:37:46,327 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4558
+INFO 2026-06-24 16:37:46,328 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:38:17,272 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4558
+INFO 2026-06-24 16:38:17,275 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:38:22,704 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 201 368
+INFO 2026-06-24 16:38:22,768 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:38:22,771 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:38:38,427 basehttp 10020 11464 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+WARNING 2026-06-24 16:38:38,444 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:38:38,450 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:38:38,480 basehttp 10020 4828 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+WARNING 2026-06-24 16:38:38,496 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 16:38:38,500 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+WARNING 2026-06-24 16:38:38,500 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:38:38,522 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 1927
+INFO 2026-06-24 16:38:42,625 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:38:42,633 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:38:42,638 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:38:42,666 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:39:13,283 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:39:13,290 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:39:43,272 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:39:43,274 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:40:12,663 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:40:12,673 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:40:43,285 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:40:43,289 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:41:13,500 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-24 16:41:13,509 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:41:42,616 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-24 16:41:42,621 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:42:13,336 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-24 16:42:13,359 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:42:43,276 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-24 16:42:43,280 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+INFO 2026-06-24 16:43:12,718 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-24 16:43:12,726 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 173
+WARNING 2026-06-24 16:43:15,094 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:43:15,097 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-24 16:43:20,388 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:43:20,394 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-24 16:43:28,465 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:43:28,467 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-24 16:43:34,199 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 201 382
+INFO 2026-06-24 16:43:34,276 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:43:34,277 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:43:42,631 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:43:42,636 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:44:13,289 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:44:13,295 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:44:22,129 log 10020 4828 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 16:44:22,135 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:44:22,135 basehttp 10020 4828 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-24 16:44:22,147 log 10020 4828 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 16:44:22,151 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:44:22,152 basehttp 10020 4828 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:44:24,743 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:44:24,752 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:44:24,760 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:44:24,794 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:44:52,622 log 10020 11464 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:44:52,624 basehttp 10020 11464 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-24 16:44:54,892 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:44:54,897 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:45:10,916 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:10,918 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-24 16:45:11,708 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:11,710 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-24 16:45:18,614 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:18,617 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-24 16:45:24,799 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:45:24,800 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:45:25,441 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:25,446 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-24 16:45:32,433 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:32,441 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-24 16:45:43,202 log 10020 4828 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:45:43,213 basehttp 10020 4828 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-24 16:45:55,285 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:45:55,291 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:46:15,454 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:46:15,458 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:46:15,464 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:46:15,480 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:46:15,483 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:46:15,540 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:46:16,794 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:46:16,802 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:46:16,813 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:46:16,842 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:46:28,985 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:46:28,988 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:46:28,995 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:46:28,999 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:46:29,000 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:46:29,037 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:46:39,791 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:46:39,798 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:46:39,825 basehttp 10020 9940 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:46:39,859 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:47:08,605 basehttp 10020 9940 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:08,609 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:08,620 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:08,628 basehttp 10020 9940 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:08,664 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:08,666 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:14,076 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:47:14,091 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:47:14,101 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:47:14,118 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:47:26,244 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:26,254 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:26,268 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:26,296 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 16:47:26,300 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:26,301 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:37,579 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:47:37,589 basehttp 10020 9940 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:47:37,622 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:47:37,632 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+WARNING 2026-06-24 16:47:38,944 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:38,958 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:38,969 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:38,997 log 10020 4828 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-24 16:47:39,002 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:39,002 basehttp 10020 4828 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:50,005 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:47:50,016 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:47:50,042 basehttp 10020 9940 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:47:50,090 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:47:59,310 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:59,313 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:59,318 basehttp 10020 9940 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:47:59,325 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:47:59,330 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:47:59,335 basehttp 10020 9940 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:48:36,021 basehttp 10020 9940 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:48:36,032 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:48:36,044 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:48:36,058 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:49:06,121 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:49:06,129 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:49:08,055 log 10020 11464 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:49:08,056 basehttp 10020 11464 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-24 16:49:15,321 log 10020 11464 Bad Request: /api/transactions/
+WARNING 2026-06-24 16:49:15,323 basehttp 10020 11464 "POST /api/transactions/ HTTP/1.1" 400 123
+INFO 2026-06-24 16:49:36,012 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:49:36,021 basehttp 10020 4828 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:49:44,720 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:49:44,728 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:49:44,737 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:49:44,748 log 10020 11464 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:49:44,752 basehttp 10020 11464 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:49:44,757 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:50:25,187 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:50:25,205 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:50:25,256 basehttp 10020 9940 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:50:25,260 basehttp 10020 11464 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:50:26,391 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:50:26,392 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:50:26,464 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:50:26,477 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:50:26,478 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:50:26,492 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:50:30,622 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:50:30,643 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:50:30,655 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:50:30,671 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-24 16:50:39,112 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:50:39,116 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:50:39,125 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:50:39,129 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:50:39,139 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:50:39,146 basehttp 10020 4828 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-24 16:51:19,071 basehttp 10020 4828 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:51:19,075 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:51:19,107 basehttp 10020 11464 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-24 16:51:19,113 basehttp 10020 9940 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-24 16:51:30,034 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:51:30,038 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:51:30,044 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:51:30,049 basehttp 10020 11464 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-24 16:51:30,067 log 10020 9940 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-24 16:51:30,069 basehttp 10020 9940 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-24 16:52:16,170 autoreload 10020 12304 E:\Python.py\Hackaton project UBL\apps\transactions\models.py changed, reloading.
+INFO 2026-06-24 16:52:21,390 autoreload 12312 10944 Watching for file changes with StatReloader
+INFO 2026-06-24 16:52:30,241 autoreload 12312 10944 E:\Python.py\Hackaton project UBL\apps\transactions\models.py changed, reloading.
+INFO 2026-06-24 16:52:33,425 autoreload 1148 11712 Watching for file changes with StatReloader
+INFO 2026-06-25 11:01:25,825 autoreload 9312 7500 Watching for file changes with StatReloader
+INFO 2026-06-25 11:02:36,949 basehttp 9312 11424 "GET / HTTP/1.1" 302 0
+INFO 2026-06-25 11:02:37,122 basehttp 9312 11424 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-25 11:02:39,722 basehttp 9312 11424 "GET /api/schema/ HTTP/1.1" 200 136475
+INFO 2026-06-25 11:06:19,610 basehttp 9312 13392 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:25,238 basehttp 9312 13392 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 11:06:32,129 basehttp 9312 13392 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:32,129 basehttp 9312 13792 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:32,134 basehttp 9312 13392 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:32,134 basehttp 9312 13792 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:32,175 basehttp 9312 13792 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:06:32,179 basehttp 9312 13392 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:06:32,194 basehttp 9312 13792 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:06:32,200 basehttp 9312 13392 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:06:35,350 basehttp 9312 13392 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:35,353 basehttp 9312 13792 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:35,360 basehttp 9312 13392 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-25 11:06:35,385 basehttp 9312 13792 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:06:35,386 log 9312 13392 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:06:35,392 basehttp 9312 13392 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:06:35,399 basehttp 9312 13792 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:06:35,403 log 9312 3744 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:06:35,406 basehttp 9312 3744 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:08:42,162 basehttp 9312 3744 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:08:42,169 basehttp 9312 13792 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:08:42,183 basehttp 9312 13392 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:08:42,194 basehttp 9312 13792 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:08:45,168 log 9312 13792 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:08:45,169 basehttp 9312 13792 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:08:45,180 basehttp 9312 13392 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:08:45,187 log 9312 13792 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:08:45,191 basehttp 9312 13792 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:08:45,194 basehttp 9312 13392 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:09:22,253 log 9312 13392 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:09:22,256 basehttp 9312 13392 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:09:22,259 basehttp 9312 13792 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:09:22,265 log 9312 13392 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:09:22,267 basehttp 9312 13392 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:09:22,271 basehttp 9312 13792 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-25 11:25:59,818 basehttp 9312 10504 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 11:26:03,269 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:26:03,292 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:26:03,293 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:26:03,302 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:26:08,912 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:26:08,914 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:26:08,921 basehttp 9312 10504 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+WARNING 2026-06-25 11:26:08,924 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:26:08,928 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:26:08,931 basehttp 9312 10504 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2391
+INFO 2026-06-25 11:27:30,508 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:27:30,513 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:27:30,527 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4563
+INFO 2026-06-25 11:27:30,529 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:28:00,359 basehttp 9312 336 "POST /api/transactions/ HTTP/1.1" 201 391
+INFO 2026-06-25 11:28:00,375 basehttp 9312 336 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:28:00,381 basehttp 9312 10504 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:28:00,513 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:28:00,516 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:28:06,066 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:28:06,070 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:28:06,077 basehttp 9312 10504 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:28:06,080 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:28:06,084 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:28:06,089 basehttp 9312 10504 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+INFO 2026-06-25 11:28:07,812 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:28:07,826 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:28:07,840 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:28:07,844 basehttp 9312 548 "GET /api/transactions/ HTTP/1.1" 200 4574
+WARNING 2026-06-25 11:28:10,011 log 9312 548 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:28:10,016 basehttp 9312 548 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:28:10,022 basehttp 9312 336 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:28:10,027 log 9312 548 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:28:10,038 basehttp 9312 548 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:28:10,044 basehttp 9312 336 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:29:42,327 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:29:42,335 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:29:42,335 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:30:15,011 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:30:15,017 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:30:15,018 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:30:15,042 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:30:15,046 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:30:15,047 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:30:25,837 basehttp 9312 336 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-25 11:30:27,745 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:30:27,748 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:30:27,752 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+WARNING 2026-06-25 11:30:27,767 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:30:27,771 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:30:27,771 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2623
+INFO 2026-06-25 11:30:59,198 basehttp 9312 548 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:30:59,212 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:30:59,217 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:30:59,238 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:31:29,188 basehttp 9312 336 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:31:29,189 basehttp 9312 10504 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:31:41,871 log 9312 10504 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:31:41,872 basehttp 9312 10504 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 11:31:47,642 log 9312 10504 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:31:47,645 basehttp 9312 10504 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 11:31:52,452 log 9312 10504 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:31:52,453 basehttp 9312 10504 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 11:31:56,161 log 9312 10504 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:31:56,176 basehttp 9312 10504 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 11:31:59,190 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 11:31:59,194 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:32:03,315 log 9312 336 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:32:03,315 basehttp 9312 336 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 11:32:06,248 log 9312 336 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:32:06,249 basehttp 9312 336 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 11:32:13,025 log 9312 336 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:32:13,026 basehttp 9312 336 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 11:32:17,213 basehttp 9312 336 "POST /api/transactions/ HTTP/1.1" 201 404
+INFO 2026-06-25 11:32:17,233 basehttp 9312 336 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:32:17,237 basehttp 9312 10504 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:32:29,192 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:32:29,196 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:32:59,185 basehttp 9312 336 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:32:59,189 basehttp 9312 10504 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:33:10,359 log 9312 10504 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:33:10,369 basehttp 9312 336 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:33:10,373 basehttp 9312 10504 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:33:10,399 basehttp 9312 336 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:33:10,402 log 9312 10504 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:33:10,403 basehttp 9312 10504 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:34:14,940 basehttp 9312 10504 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:34:14,949 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:34:14,955 basehttp 9312 548 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:34:14,962 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:34:45,280 basehttp 9312 336 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:34:45,282 basehttp 9312 548 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:35:15,270 basehttp 9312 548 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:35:15,287 basehttp 9312 548 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:35:45,271 basehttp 9312 548 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:35:45,274 basehttp 9312 336 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:36:10,732 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:36:10,748 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:36:10,753 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:36:10,762 basehttp 9312 548 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:36:10,773 log 9312 336 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:36:10,774 basehttp 9312 336 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:41:23,744 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:41:23,747 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:41:23,753 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:41:23,756 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:41:23,761 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:41:23,764 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 11:41:25,982 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:41:25,986 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:41:26,009 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:41:26,013 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:41:51,163 log 9312 4752 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:41:51,165 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 11:41:55,993 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:41:55,995 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:41:56,681 log 9312 11968 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:41:56,682 basehttp 9312 11968 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:42:08,919 log 9312 11968 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:08,920 basehttp 9312 11968 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:42:09,637 log 9312 11968 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:09,638 basehttp 9312 11968 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 11:42:21,376 basehttp 9312 11968 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 11:42:25,928 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:42:25,930 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:42:25,946 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:42:25,949 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:42:42,387 log 9312 4752 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:42,388 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:42:47,177 log 9312 4752 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:47,179 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:42:48,498 log 9312 4752 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:48,499 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:42:49,527 log 9312 4752 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:42:49,528 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 11:42:55,924 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4586
+INFO 2026-06-25 11:42:55,927 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:43:09,264 basehttp 9312 11968 "POST /api/transactions/ HTTP/1.1" 201 372
+INFO 2026-06-25 11:43:09,290 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:43:09,306 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4584
+INFO 2026-06-25 11:43:25,933 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4584
+INFO 2026-06-25 11:43:25,937 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:43:30,325 basehttp 9312 4752 "POST /api/transactions/ HTTP/1.1" 201 374
+INFO 2026-06-25 11:43:30,350 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:43:30,354 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:43:55,926 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:43:55,930 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:44:25,921 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:44:25,925 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:44:37,649 log 9312 11968 Bad Request: /api/transactions/
+WARNING 2026-06-25 11:44:37,651 basehttp 9312 11968 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 11:44:48,406 log 9312 11968 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:44:48,409 basehttp 9312 11968 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:44:48,416 basehttp 9312 4752 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:44:48,419 log 9312 11968 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:44:48,423 basehttp 9312 11968 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:44:48,429 basehttp 9312 4752 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 11:45:32,340 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:45:32,359 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:45:32,368 basehttp 9312 4752 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:45:32,377 basehttp 9312 11968 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:45:46,163 log 9312 11968 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:45:46,171 basehttp 9312 4752 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:45:46,172 basehttp 9312 11968 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:45:46,184 log 9312 11968 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:45:46,189 basehttp 9312 11968 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:45:46,189 basehttp 9312 4752 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 11:46:36,251 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:46:36,269 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 11:46:36,270 basehttp 9312 11968 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 11:46:36,287 basehttp 9312 4752 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 11:46:52,769 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:46:52,774 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:46:52,774 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:46:52,787 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:46:52,791 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:46:52,807 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:48:29,278 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 11:48:29,280 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 11:48:29,299 log 9312 4752 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 11:48:29,305 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 11:48:29,313 basehttp 9312 4752 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 11:48:29,336 basehttp 9312 11968 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 12:11:13,061 basehttp 9312 11296 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 12:11:31,414 basehttp 9312 11296 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 12:11:31,443 basehttp 9312 11388 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 12:11:31,451 basehttp 9312 11296 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 12:11:31,470 basehttp 9312 11388 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 12:11:33,245 log 9312 11388 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:11:33,251 basehttp 9312 11388 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:11:33,270 basehttp 9312 11296 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:11:33,277 log 9312 11388 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:11:33,279 basehttp 9312 11388 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:11:33,289 basehttp 9312 9384 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 12:12:16,951 basehttp 9312 11388 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 12:12:16,959 basehttp 9312 9384 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 12:12:16,977 basehttp 9312 11388 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 12:12:17,003 basehttp 9312 9384 "GET /api/transactions/ HTTP/1.1" 200 4583
+WARNING 2026-06-25 12:12:17,852 log 9312 9384 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:12:17,856 basehttp 9312 9384 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:12:17,863 basehttp 9312 11388 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:12:17,875 log 9312 9384 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:12:17,887 basehttp 9312 11388 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:12:17,915 basehttp 9312 9384 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:15:05,773 log 9312 9384 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:15:05,780 basehttp 9312 11388 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:15:05,781 basehttp 9312 9384 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:15:05,848 log 9312 9384 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:15:05,853 basehttp 9312 11388 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:15:05,898 basehttp 9312 9384 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:21:27,573 log 9312 2904 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:21:27,583 basehttp 9312 2904 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:21:27,673 basehttp 9312 11224 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:21:27,677 log 9312 2904 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:21:27,696 basehttp 9312 2904 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:21:27,709 basehttp 9312 11224 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 12:21:42,106 basehttp 9312 11224 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-25 12:21:48,028 log 9312 11224 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:21:48,041 basehttp 9312 2904 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:21:48,043 basehttp 9312 11224 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:21:48,071 log 9312 11224 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:21:48,078 basehttp 9312 2904 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:21:48,078 basehttp 9312 11224 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:21:57,712 log 9312 11224 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:21:57,719 basehttp 9312 11224 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:21:57,731 basehttp 9312 2904 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:21:57,745 log 9312 11224 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:21:57,746 basehttp 9312 11224 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:21:57,763 basehttp 9312 14024 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 12:29:53,130 basehttp 9312 1436 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-25 12:30:17,313 log 9312 1436 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:30:17,316 basehttp 9312 1436 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:30:17,325 basehttp 9312 10988 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:30:17,350 log 9312 1436 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 12:30:17,363 basehttp 9312 10988 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 12:30:17,424 basehttp 9312 1436 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:43:39,090 basehttp 9312 3588 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-25 12:44:18,871 log 9312 3588 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:44:18,872 basehttp 9312 3588 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 12:44:18,889 log 9312 3588 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 12:44:18,901 basehttp 9312 3588 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 12:44:18,901 basehttp 9312 7916 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 12:44:18,917 basehttp 9312 7916 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:03:38,315 log 9312 2408 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:03:38,324 basehttp 9312 2408 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:03:38,403 basehttp 9312 6472 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:03:38,425 log 9312 2408 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:03:38,449 basehttp 9312 2408 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:03:38,461 basehttp 9312 6472 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 13:03:45,056 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:03:45,062 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:03:45,073 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:03:45,090 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:04:06,683 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:04:06,711 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 13:04:15,162 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:04:15,165 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:04:45,331 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:04:45,349 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:05:15,314 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:05:15,329 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:05:45,363 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:05:45,363 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:06:15,317 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:06:15,324 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:06:45,336 basehttp 9312 6472 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:06:45,337 basehttp 9312 2408 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:06:45,391 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:06:45,413 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:07:53,307 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:07:53,316 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:10:05,334 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4583
+INFO 2026-06-25 13:10:05,346 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:10:09,377 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:10:09,391 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 13:10:10,286 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:10:10,317 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 13:10:14,187 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 201 372
+INFO 2026-06-25 13:10:14,285 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4580
+INFO 2026-06-25 13:10:14,285 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:10:15,081 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4580
+INFO 2026-06-25 13:10:15,090 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:10:30,669 basehttp 9312 6472 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:10:35,522 basehttp 9312 6472 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 13:10:44,037 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4580
+INFO 2026-06-25 13:10:44,042 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:10:44,086 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4580
+INFO 2026-06-25 13:10:44,088 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:11:08,208 basehttp 9312 6472 "POST /api/transactions/ HTTP/1.1" 201 381
+INFO 2026-06-25 13:11:08,239 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:11:08,245 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:11:14,150 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:11:14,151 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:11:44,054 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:11:44,068 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:11:44,992 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:11:45,035 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 13:12:14,174 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:12:14,176 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:12:44,172 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:12:44,173 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:13:14,047 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:13:14,055 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:13:44,113 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:13:44,121 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:14:14,103 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:14:14,108 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:14:44,042 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:14:44,043 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:15:14,070 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:15:14,111 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:15:44,071 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:15:44,078 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:16:14,055 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:16:14,064 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:16:44,055 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:16:44,060 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:17:14,058 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:17:14,066 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:17:44,064 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:17:44,075 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:18:09,016 basehttp 9312 2408 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 13:18:16,809 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:18:16,840 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:18:16,840 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:18:16,857 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:18:30,391 log 9312 6472 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:18:30,404 basehttp 9312 6472 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 13:18:47,512 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:18:47,531 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:19:16,880 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:19:16,888 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:20:02,375 basehttp 9312 6472 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 13:20:07,590 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:20:07,605 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:20:07,615 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:20:07,625 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:20:37,654 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:20:37,658 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:21:07,587 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:21:07,592 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:21:15,343 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:21:15,355 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:21:15,375 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:21:15,389 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:21:31,473 log 9312 6472 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:21:31,526 basehttp 9312 6472 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 13:21:45,348 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:21:45,357 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:21:53,802 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:21:53,858 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 187
+WARNING 2026-06-25 13:21:57,656 log 9312 2408 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:21:57,662 basehttp 9312 2408 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 13:22:15,346 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:22:15,357 basehttp 9312 6472 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:22:20,725 basehttp 9312 2408 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:22:20,725 basehttp 9312 6472 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:22:20,734 basehttp 9312 2408 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-25 13:22:20,734 basehttp 9312 6472 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+WARNING 2026-06-25 13:22:20,755 log 9312 2408 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:22:20,759 basehttp 9312 2408 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 13:22:20,783 log 9312 2408 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 13:22:20,784 basehttp 9312 6472 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:22:20,785 basehttp 9312 2408 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:22:20,805 basehttp 9312 6472 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 13:22:26,501 basehttp 9312 6472 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:22:26,509 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:22:26,530 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:22:26,535 basehttp 9312 3028 "GET /api/transactions/ HTTP/1.1" 200 4582
+INFO 2026-06-25 13:22:44,891 basehttp 9312 3028 "POST /api/transactions/ HTTP/1.1" 201 363
+INFO 2026-06-25 13:22:44,924 basehttp 9312 3028 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:22:44,929 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:22:57,348 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:22:57,355 basehttp 9312 3028 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:23:27,292 basehttp 9312 3028 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:23:27,301 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:23:57,338 basehttp 9312 3028 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:23:57,345 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:24:27,275 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:24:27,281 basehttp 9312 3028 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:24:57,300 basehttp 9312 3028 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:24:57,307 basehttp 9312 2408 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:25:27,391 basehttp 9312 2408 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:25:27,396 basehttp 9312 3028 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:31:07,493 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:31:07,509 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:31:28,346 basehttp 9312 14160 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 13:31:32,339 basehttp 9312 14160 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:31:32,343 basehttp 9312 9212 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:31:32,361 basehttp 9312 14160 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:31:32,376 basehttp 9312 9212 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:31:46,480 log 9312 9212 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:31:46,500 basehttp 9312 9212 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 13:31:52,151 log 9312 9212 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:31:52,166 basehttp 9312 9212 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 13:31:53,046 log 9312 9212 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:31:53,052 basehttp 9312 9212 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 13:31:57,361 log 9312 9212 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:31:57,386 basehttp 9312 9212 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 13:32:01,951 log 9312 9212 Bad Request: /api/transactions/
+WARNING 2026-06-25 13:32:01,984 basehttp 9312 9212 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 13:32:02,343 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:32:02,347 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:32:17,693 basehttp 9312 14160 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:32:17,697 log 9312 9212 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:32:17,702 basehttp 9312 9212 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:32:17,711 basehttp 9312 14160 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:32:17,729 log 9312 9212 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:32:17,730 basehttp 9312 9212 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:32:22,070 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:32:22,085 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:32:22,100 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:32:22,106 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 13:32:24,471 log 9312 14160 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 13:32:24,480 basehttp 9312 14160 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 13:32:24,543 log 9312 14160 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 13:32:24,547 basehttp 9312 9212 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 13:32:24,563 basehttp 9312 14160 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 13:32:24,603 basehttp 9312 9212 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 13:32:29,303 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:32:29,309 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 13:32:29,336 basehttp 9312 9212 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 13:32:29,343 basehttp 9312 14160 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:25:49,654 autoreload 12520 2488 Watching for file changes with StatReloader
+INFO 2026-06-25 15:26:57,781 basehttp 12520 7572 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:27:27,766 basehttp 12520 7572 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 15:28:02,710 basehttp 12520 7572 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:28:02,729 basehttp 12520 7572 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:28:02,738 basehttp 12520 7572 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:28:02,950 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:03,004 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:28:03,027 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:03,047 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:28:05,645 basehttp 12520 11420 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:28:05,667 basehttp 12520 7572 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:28:05,667 basehttp 12520 11420 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+WARNING 2026-06-25 15:28:05,729 log 12520 7572 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 15:28:05,730 basehttp 12520 7572 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 15:28:05,751 basehttp 12520 11420 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 15:28:05,755 log 12520 7572 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 15:28:05,762 basehttp 12520 7572 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 15:28:05,865 basehttp 12520 7572 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 15:28:07,917 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:07,926 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:28:07,957 basehttp 12520 1152 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:07,965 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 15:28:08,839 log 12520 11420 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 15:28:08,841 basehttp 12520 11420 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 15:28:08,884 log 12520 1152 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 15:28:08,897 basehttp 12520 11420 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 15:28:08,897 basehttp 12520 1152 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 15:28:08,927 basehttp 12520 11420 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 15:28:12,125 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:12,130 basehttp 12520 1152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:28:12,178 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:12,182 basehttp 12520 1152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:28:42,080 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:28:42,084 basehttp 12520 1152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:29:12,071 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:29:12,088 basehttp 12520 1152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:29:37,696 basehttp 12520 1152 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:29:37,741 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4574
+INFO 2026-06-25 15:29:37,741 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:29:37,974 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:29:52,995 basehttp 12520 7572 "POST /api/transactions/ HTTP/1.1" 201 370
+INFO 2026-06-25 15:29:53,044 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:29:53,050 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:30:07,589 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:30:07,598 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 15:30:15,278 log 12520 11420 Bad Request: /api/transactions/
+WARNING 2026-06-25 15:30:15,281 basehttp 12520 11420 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 15:30:37,842 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:30:37,848 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:31:07,607 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:31:07,650 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:31:37,600 basehttp 12520 7572 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:31:37,608 basehttp 12520 11420 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:32:07,604 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:32:07,616 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:32:37,622 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:32:37,635 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:33:07,634 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:33:07,641 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:33:37,633 basehttp 12520 7572 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:33:37,633 basehttp 12520 11420 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:34:28,779 basehttp 12520 11420 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 15:37:31,168 basehttp 12520 10496 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-06-25 15:37:46,071 log 12520 10496 Bad Request: /api/auth/login/
+WARNING 2026-06-25 15:37:46,150 basehttp 12520 10496 "POST /api/auth/login/ HTTP/1.1" 400 100
+WARNING 2026-06-25 15:39:10,613 log 12520 10496 Bad Request: /api/auth/login/
+WARNING 2026-06-25 15:39:10,664 basehttp 12520 10496 "POST /api/auth/login/ HTTP/1.1" 400 100
+WARNING 2026-06-25 15:44:51,489 log 12520 4336 Bad Request: /api/auth/login/
+WARNING 2026-06-25 15:44:51,491 basehttp 12520 4336 "POST /api/auth/login/ HTTP/1.1" 400 100
+INFO 2026-06-25 15:45:14,154 basehttp 12520 2516 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:45:28,993 basehttp 12520 2516 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 15:46:35,631 basehttp 12520 2516 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:46:35,643 basehttp 12520 2516 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:46:35,661 basehttp 12520 2516 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-25 15:46:35,687 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:46:35,710 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:46:35,776 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:46:35,800 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:47:06,279 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:47:06,299 basehttp 12520 2424 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:47:36,302 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:47:36,311 basehttp 12520 2424 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:48:06,393 basehttp 12520 2424 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:48:06,421 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:48:36,280 basehttp 12520 2424 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:48:36,286 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:49:06,435 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:49:06,441 basehttp 12520 2424 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:49:36,301 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:49:36,304 basehttp 12520 2424 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:50:16,296 basehttp 12520 2516 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:50:16,340 basehttp 12520 2424 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:51:18,801 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:51:18,816 basehttp 12520 2424 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:52:16,317 basehttp 12520 2424 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:52:16,326 basehttp 12520 2516 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:54:08,537 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:54:08,572 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:54:36,345 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:54:36,346 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:55:06,492 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:55:06,497 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:55:45,678 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:55:45,701 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:56:07,236 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:56:07,253 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:56:36,293 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:56:36,304 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:57:06,320 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:57:06,379 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:57:36,317 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:57:36,367 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:58:06,367 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:58:06,367 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:58:36,303 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:58:36,306 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:59:06,788 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:59:06,802 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 15:59:35,744 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 15:59:35,748 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:00:05,787 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:00:05,887 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:00:36,322 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:00:36,327 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:01:06,304 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:01:06,310 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:02:07,300 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:02:07,329 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:02:56,044 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:02:56,115 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:03:05,690 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:03:05,706 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:03:36,301 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:03:36,310 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:03:54,501 basehttp 12520 10720 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-25 16:03:54,522 basehttp 12520 10152 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+WARNING 2026-06-25 16:03:54,568 log 12520 10152 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 16:03:54,575 basehttp 12520 10152 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 16:03:54,582 basehttp 12520 10720 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+WARNING 2026-06-25 16:03:54,624 log 12520 10152 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 16:03:54,631 basehttp 12520 10152 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 16:03:54,631 basehttp 12520 10720 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 16:03:57,463 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:03:57,603 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:03:57,623 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:03:57,687 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:03:58,199 log 12520 10720 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 16:03:58,201 basehttp 12520 10720 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 16:03:58,356 log 12520 10720 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 16:03:58,363 basehttp 12520 10720 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 16:03:58,363 basehttp 12520 10152 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 16:03:58,417 basehttp 12520 10152 "GET /api/transactions/suspicious/ HTTP/1.1" 200 2856
+INFO 2026-06-25 16:05:25,068 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:05:25,077 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:05:25,104 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:05:25,111 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:05:47,444 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:05:47,446 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:05:55,368 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:05:55,372 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:06:25,287 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:06:25,310 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:06:55,315 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:06:55,324 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:07:25,303 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:07:25,309 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:07:55,937 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:07:55,989 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:08:38,285 basehttp 12520 10720 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 16:08:43,949 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:08:43,956 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:08:44,011 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:08:44,015 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:09:05,050 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:09:05,052 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 16:09:14,382 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:09:14,403 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:09:43,919 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4557
+INFO 2026-06-25 16:09:43,925 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:09:49,755 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 201 367
+INFO 2026-06-25 16:09:49,889 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:09:49,890 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:10:14,341 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:10:14,395 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:10:44,402 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:10:44,404 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:11:14,392 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:11:14,398 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:11:42,879 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:11:42,880 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:11:43,897 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:11:43,901 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:12:13,976 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:12:13,982 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:12:43,939 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:12:43,943 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:13:13,951 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:13:13,952 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:13:43,962 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:13:43,969 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:13:54,737 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:13:54,739 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 16:13:55,537 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:13:55,538 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:14:14,318 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:14:14,318 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:14:43,943 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:14:43,944 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4549
+INFO 2026-06-25 16:14:44,528 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 201 373
+INFO 2026-06-25 16:14:44,581 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4548
+INFO 2026-06-25 16:14:44,587 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:15:13,905 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4548
+INFO 2026-06-25 16:15:13,910 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:15:14,681 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 201 368
+INFO 2026-06-25 16:15:14,763 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:15:14,772 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:15:41,770 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:15:41,777 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 16:15:43,909 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:15:43,919 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:15:46,500 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:15:46,501 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 16:16:14,268 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:16:14,278 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:16:44,306 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:16:44,311 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:17:16,292 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:17:16,297 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:18:16,393 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:18:16,398 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:19:16,398 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:19:16,405 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:20:16,368 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:20:16,401 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:21:16,301 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:21:16,310 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:22:16,324 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:22:16,351 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:23:16,478 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:23:16,482 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:24:03,374 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:24:03,379 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:24:13,950 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:24:13,955 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:24:43,998 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:24:44,006 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:25:13,939 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:25:13,945 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:25:43,982 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:25:43,991 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:26:13,857 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:26:13,859 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:26:43,940 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:26:43,968 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:27:13,889 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:27:13,895 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:27:44,347 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:27:44,359 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:28:14,295 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:28:14,299 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:29:15,316 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:29:15,320 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:30:16,293 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:30:16,300 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:31:16,280 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:31:16,285 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:32:16,293 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:32:16,298 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:33:16,360 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:33:16,367 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:34:16,392 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:34:16,406 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:35:16,399 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:35:16,419 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:36:16,396 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:36:16,401 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:37:16,399 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:37:16,403 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:37:48,772 basehttp 12520 10720 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 16:37:51,803 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:37:51,808 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:37:51,828 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:37:51,846 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:38:08,237 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:38:08,239 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 140
+WARNING 2026-06-25 16:38:13,403 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:38:13,408 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 140
+INFO 2026-06-25 16:38:23,917 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:38:23,917 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:38:52,281 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:38:52,286 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:39:22,379 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:39:22,380 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:39:52,280 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:39:52,294 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:40:22,330 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:40:22,335 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:40:52,438 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:40:52,445 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:42:10,299 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4544
+INFO 2026-06-25 16:42:10,302 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:42:46,023 basehttp 12520 10152 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 16:42:52,971 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4573
+INFO 2026-06-25 16:42:52,987 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:42:52,999 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4573
+INFO 2026-06-25 16:42:53,009 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:43:07,722 log 12520 10720 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:43:07,724 basehttp 12520 10720 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:43:11,367 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4573
+INFO 2026-06-25 16:43:11,380 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:43:12,728 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:43:12,729 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 16:43:13,876 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:43:13,878 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 125
+WARNING 2026-06-25 16:43:14,939 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:43:14,940 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:43:23,360 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4573
+INFO 2026-06-25 16:43:23,364 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:43:48,755 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:43:48,767 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:44:00,276 basehttp 12520 10720 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-25 16:44:09,395 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:44:09,407 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:44:09,417 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:44:09,428 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:44:26,850 log 12520 10152 Bad Request: /api/transactions/
+WARNING 2026-06-25 16:44:26,851 basehttp 12520 10152 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 16:44:39,408 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:44:39,418 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:45:10,295 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:45:10,320 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:45:40,379 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:45:40,389 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:46:10,609 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:46:10,680 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:46:40,310 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:46:40,313 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:47:10,308 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:47:10,318 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:47:55,444 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:47:55,452 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:48:10,300 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:48:10,307 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:48:40,299 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:48:40,317 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:49:16,325 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:49:16,333 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:49:40,508 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:49:40,711 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:50:10,299 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:50:10,306 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:50:40,287 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:50:40,291 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:51:15,534 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:51:15,543 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:51:40,351 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:51:40,380 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:52:10,336 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:52:10,343 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:53:16,284 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:53:16,288 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:53:51,935 basehttp 12520 10720 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:53:51,951 basehttp 12520 10152 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:54:10,266 basehttp 12520 10152 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:54:10,271 basehttp 12520 10720 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:54:40,571 basehttp 12520 13704 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:54:40,574 basehttp 12520 11872 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:55:10,289 basehttp 12520 11872 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:55:10,300 basehttp 12520 13704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:55:40,283 basehttp 12520 13704 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:55:40,287 basehttp 12520 11872 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:56:16,278 basehttp 12520 11872 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:56:16,283 basehttp 12520 13704 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:57:16,273 basehttp 12520 13704 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:57:16,278 basehttp 12520 11872 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:57:22,341 autoreload 12520 2488 E:\Python.py\Hackaton project UBL\apps\transactions\models.py changed, reloading.
+INFO 2026-06-25 16:57:24,065 autoreload 1152 6908 Watching for file changes with StatReloader
+INFO 2026-06-25 16:57:40,629 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:57:40,650 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:58:10,293 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4575
+INFO 2026-06-25 16:58:10,299 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:58:46,166 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4598
+INFO 2026-06-25 16:58:46,170 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:58:54,407 basehttp 1152 4172 "POST /api/transactions/ HTTP/1.1" 201 383
+INFO 2026-06-25 16:58:54,436 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 16:58:54,439 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:58:56,901 basehttp 1152 4172 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4253
+WARNING 2026-06-25 16:58:56,902 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 16:58:56,903 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-25 16:58:56,924 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 16:58:56,928 basehttp 1152 4172 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4253
+WARNING 2026-06-25 16:58:56,929 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 16:58:58,783 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 16:58:58,802 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:58:58,810 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 16:58:58,817 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 16:59:29,272 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 16:59:29,276 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 16:59:59,260 log 1152 1556 Unauthorized: /api/transactions/
+WARNING 2026-06-25 16:59:59,282 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 401 87
+WARNING 2026-06-25 16:59:59,295 log 1152 2620 Unauthorized: /api/transactions/fraud_stats/
+WARNING 2026-06-25 16:59:59,298 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 401 87
+WARNING 2026-06-25 17:00:28,796 log 1152 1556 Unauthorized: /api/transactions/
+WARNING 2026-06-25 17:00:28,798 log 1152 2620 Unauthorized: /api/transactions/fraud_stats/
+WARNING 2026-06-25 17:00:28,800 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 401 87
+WARNING 2026-06-25 17:00:28,802 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 401 87
+INFO 2026-06-25 17:00:34,040 basehttp 1152 2620 "POST /api/auth/login/ HTTP/1.1" 200 760
+WARNING 2026-06-25 17:00:36,682 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:00:36,691 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:00:36,698 basehttp 1152 1556 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4253
+WARNING 2026-06-25 17:00:36,701 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:00:36,705 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:00:36,710 basehttp 1152 1556 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4253
+INFO 2026-06-25 17:00:38,330 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:00:38,331 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:00:38,360 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:00:38,361 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:00:41,247 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:00:41,262 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:00:41,269 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:00:41,276 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 17:01:03,477 log 1152 4172 Bad Request: /api/transactions/
+WARNING 2026-06-25 17:01:03,478 basehttp 1152 4172 "POST /api/transactions/ HTTP/1.1" 400 125
+INFO 2026-06-25 17:01:09,261 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:01:09,264 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:01:11,246 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4609
+INFO 2026-06-25 17:01:11,249 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:01:14,837 basehttp 1152 4172 "POST /api/transactions/ HTTP/1.1" 201 385
+INFO 2026-06-25 17:01:14,853 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4626
+INFO 2026-06-25 17:01:14,856 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:01:32,486 basehttp 1152 1556 "POST /api/transactions/ HTTP/1.1" 201 384
+INFO 2026-06-25 17:01:32,506 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:01:32,508 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:01:39,278 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:01:39,281 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:01:41,393 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:01:41,402 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:02:09,271 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:02:09,275 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:02:11,266 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:02:11,271 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:02:39,331 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:02:39,335 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:02:41,288 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:02:41,294 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:03:09,286 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:03:09,290 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:03:11,271 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:03:11,279 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:03:39,267 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:03:39,278 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:03:41,434 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:03:41,443 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:04:16,281 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:04:16,286 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:04:16,311 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:04:16,315 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:05:16,292 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:05:16,301 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:05:16,310 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:05:16,326 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:06:16,275 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:06:16,296 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:06:16,301 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:06:16,327 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:07:16,276 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:07:16,285 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:07:16,291 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:07:16,300 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:08:20,554 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:08:20,567 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:08:21,402 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:08:27,727 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:08:39,287 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:08:39,316 basehttp 1152 1556 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:09:09,263 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:09:09,273 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+WARNING 2026-06-25 17:09:17,457 log 1152 1556 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:09:17,463 basehttp 1152 1556 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:09:17,467 basehttp 1152 4172 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4719
+WARNING 2026-06-25 17:09:17,470 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:09:17,476 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:09:17,481 basehttp 1152 1556 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4719
+INFO 2026-06-25 17:09:19,183 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:09:19,206 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:09:19,217 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:09:19,243 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:09:49,178 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:09:49,183 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:10:19,249 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4643
+INFO 2026-06-25 17:10:19,254 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:10:34,705 basehttp 1152 4172 "POST /api/transactions/ HTTP/1.1" 201 380
+INFO 2026-06-25 17:10:34,725 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:10:34,731 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+WARNING 2026-06-25 17:10:43,532 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:10:43,535 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:10:43,539 basehttp 1152 4172 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4947
+WARNING 2026-06-25 17:10:43,571 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+INFO 2026-06-25 17:10:43,577 basehttp 1152 1556 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4947
+WARNING 2026-06-25 17:10:43,577 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:10:45,406 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:10:45,435 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:10:45,448 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:10:45,452 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:10:49,228 basehttp 1152 4172 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4947
+WARNING 2026-06-25 17:10:49,240 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:10:49,242 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:10:49,250 basehttp 1152 1556 "GET /api/transactions/suspicious/ HTTP/1.1" 200 4947
+WARNING 2026-06-25 17:10:49,259 log 1152 2620 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:10:49,261 basehttp 1152 2620 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+INFO 2026-06-25 17:10:54,186 basehttp 1152 1556 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:10:54,202 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:10:54,208 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:10:54,241 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:11:24,773 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:11:24,810 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:11:54,292 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:11:54,299 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:12:24,277 basehttp 1152 4172 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:12:24,279 basehttp 1152 2620 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:12:54,555 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:12:54,601 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:13:24,290 basehttp 1152 2620 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:13:24,298 basehttp 1152 4172 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:20:42,623 basehttp 1152 9196 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:20:42,641 basehttp 1152 5252 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:20:54,279 basehttp 1152 9196 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:20:54,287 basehttp 1152 5252 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:21:24,278 basehttp 1152 5252 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:21:24,281 basehttp 1152 9196 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:22:16,642 basehttp 1152 5252 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175
+INFO 2026-06-25 17:22:16,651 basehttp 1152 9196 "GET /api/transactions/ HTTP/1.1" 200 4651
+WARNING 2026-06-25 17:23:08,657 log 1152 13580 Unauthorized: /api/transactions/fraud-alerts/
+WARNING 2026-06-25 17:23:08,659 basehttp 1152 13580 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 401 87
+INFO 2026-06-25 17:23:19,584 basehttp 1152 9196 "GET /api/transactions/ HTTP/1.1" 200 4651
+INFO 2026-06-25 17:23:19,590 basehttp 1152 5252 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 175

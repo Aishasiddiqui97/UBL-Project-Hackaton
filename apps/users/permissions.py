@@ -18,6 +18,13 @@ class IsManager(BasePermission):
         return request.user.is_authenticated and (request.user.is_admin or request.user.is_manager)
 
 
+class IsManagerOrAdmin(BasePermission):
+    """Permission for manager and admin users (alias for IsManager)."""
+    
+    def has_permission(self, request: Request, view: View) -> bool:
+        return request.user.is_authenticated and (request.user.is_admin or request.user.is_manager)
+
+
 class IsOwnerOrAdmin(BasePermission):
     """Permission for owner or admin."""
     

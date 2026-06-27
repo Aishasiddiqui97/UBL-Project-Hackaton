@@ -1919,3 +1919,37 @@ WARNING 2026-06-27 23:12:24,690 log 5448 13108 Not Found: /api/auth/login/
 WARNING 2026-06-27 23:12:24,745 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
 WARNING 2026-06-27 23:12:28,954 log 5448 13108 Not Found: /api/auth/login/
 WARNING 2026-06-27 23:12:28,956 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:14:59,664 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:14:59,837 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:15:00,912 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:15:01,036 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:15:18,533 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:15:18,552 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:15:19,501 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:15:19,502 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:15:47,284 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:15:47,379 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:16:26,940 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:16:26,946 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:17:26,185 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:17:26,196 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:17:59,507 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:17:59,508 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:19:52,666 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:19:52,667 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+INFO 2026-06-27 23:19:56,608 basehttp 5448 3568 "GET / HTTP/1.1" 302 0
+INFO 2026-06-27 23:19:56,683 basehttp 5448 3568 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-27 23:19:59,188 basehttp 5448 3568 "GET /api/schema/ HTTP/1.1" 200 441867
+INFO 2026-06-27 23:20:32,019 autoreload 5072 9424 Watching for file changes with StatReloader
+INFO 2026-06-27 23:21:14,964 basehttp 5072 5496 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-06-27 23:21:17,821 log 5072 5496 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:21:17,822 basehttp 5072 5496 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:21:35,866 log 5072 5496 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:21:35,867 basehttp 5072 5496 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:23:58,276 log 5072 8032 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:23:58,281 basehttp 5072 8032 "OPTIONS /api/auth/login/ HTTP/1.1" 404 11509
+INFO 2026-06-27 23:24:27,221 autoreload 5072 9424 E:\Python.py\Hackaton project UBL\apps\authentication\urls.py changed, reloading.
+INFO 2026-06-27 23:24:29,804 autoreload 12632 13824 Watching for file changes with StatReloader
+INFO 2026-06-27 23:24:50,988 autoreload 12632 13824 E:\Python.py\Hackaton project UBL\apps\authentication\views.py changed, reloading.
+INFO 2026-06-27 23:24:53,171 autoreload 1956 13436 Watching for file changes with StatReloader
+INFO 2026-06-27 23:25:43,820 autoreload 13960 14300 Watching for file changes with StatReloader

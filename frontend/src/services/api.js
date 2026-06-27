@@ -87,6 +87,14 @@ class ApiService {
     try {
       const response = await fetch(url, config);
       
+      // Check content type before parsing JSON
+      const contentType = response.headers.get('content-type');
+      
+      if (!contentType || !contentType.includes('application/json')) {
+        console.error('Backend returned non-JSON response:', contentType);
+        throw new Error('Backend server error. Expected JSON but got ' + (contentType || 'unknown'));
+      }
+      
       // If 401, try to refresh token
       if (response.status === 401 && !endpoint.includes('/auth/')) {
         if (!this.isRefreshing) {
@@ -96,6 +104,13 @@ class ApiService {
             // Retry the original request
             config.headers = this.getAuthHeaders();
             const retryResponse = await fetch(url, config);
+            
+            // Check content type for retry
+            const retryContentType = retryResponse.headers.get('content-type');
+            if (!retryContentType || !retryContentType.includes('application/json')) {
+              throw new Error('Backend server error on retry');
+            }
+            
             const retryData = await retryResponse.json();
             
             if (!retryResponse.ok) {
@@ -124,6 +139,10 @@ class ApiService {
       return data.data ? data : data;
     } catch (error) {
       console.error('API call failed:', error);
+      // Better error message for JSON parse errors
+      if (error.message.includes('JSON') || error.message.includes('Unexpected token')) {
+        throw new Error('Backend error: Server returned invalid response. Check if Django is running.');
+      }
       throw error;
     }
   }
@@ -144,8 +163,18 @@ class ApiService {
 
     try {
       const response = await fetch(url, config);
-      const data = await response.json();
+      
+      // Check content type to avoid JSON parse error on HTML responses
+      const contentType = response.headers.get('content-type');
+      console.log('Response content-type:', contentType, 'Status:', response.status);
+      
+      if (!contentType || !contentType.includes('application/json')) {
+        // Backend returned HTML instead of JSON (error page)
+        console.error('Backend returned non-JSON response. Backend may be down or URL is wrong.');
+        throw new Error('Backend server error. Please check if backend is running on port 8000.');
+      }
 
+      const data = await response.json();
       console.log('Login API Response:', { status: response.status, data });
 
       if (!response.ok) {
@@ -158,6 +187,10 @@ class ApiService {
       return { data: data.data || data };
     } catch (error) {
       console.error('Login API call failed:', error);
+      // If it's a JSON parse error, give a clearer message
+      if (error.message.includes('JSON') || error.message.includes('Unexpected token')) {
+        throw new Error('Backend is not responding correctly. Please ensure Django server is running on http://localhost:8000');
+      }
       throw error;
     }
   }

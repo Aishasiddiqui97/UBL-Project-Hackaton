@@ -1953,3 +1953,2453 @@ INFO 2026-06-27 23:24:29,804 autoreload 12632 13824 Watching for file changes wi
 INFO 2026-06-27 23:24:50,988 autoreload 12632 13824 E:\Python.py\Hackaton project UBL\apps\authentication\views.py changed, reloading.
 INFO 2026-06-27 23:24:53,171 autoreload 1956 13436 Watching for file changes with StatReloader
 INFO 2026-06-27 23:25:43,820 autoreload 13960 14300 Watching for file changes with StatReloader
+INFO 2026-06-27 23:26:09,613 basehttp 13960 4992 "POST /api/auth/login/ HTTP/1.1" 200 760
+INFO 2026-06-27 23:26:26,348 basehttp 13960 2276 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:26,349 basehttp 13960 4992 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:26,354 basehttp 13960 2276 "OPTIONS /api/transactions/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:26,355 basehttp 13960 4992 "OPTIONS /api/transactions/fraud_stats/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:26,383 basehttp 13960 2276 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 174
+INFO 2026-06-27 23:26:26,416 basehttp 13960 2276 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 174
+ERROR 2026-06-27 23:26:27,298 log 13960 4992 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 213, in paginate_queryset
+    return list(self.page)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:26:27,383 basehttp 13960 4992 "GET /api/transactions/ HTTP/1.1" 500 184913
+ERROR 2026-06-27 23:26:27,516 log 13960 2276 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 213, in paginate_queryset
+    return list(self.page)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:26:27,579 basehttp 13960 2276 "GET /api/transactions/ HTTP/1.1" 500 184913
+INFO 2026-06-27 23:26:28,938 basehttp 13960 2276 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:28,942 basehttp 13960 4992 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:28,949 basehttp 13960 7136 "OPTIONS /api/transactions/fraud-alerts/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:28,949 basehttp 13960 7748 "OPTIONS /api/transactions/suspicious/ HTTP/1.1" 200 0
+WARNING 2026-06-27 23:26:28,974 log 13960 7748 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-27 23:26:29,005 basehttp 13960 7748 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-27 23:26:29,031 log 13960 7748 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-27 23:26:29,034 basehttp 13960 7748 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+ERROR 2026-06-27 23:26:29,165 log 13960 7136 Internal Server Error: /api/transactions/suspicious/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 67, in suspicious
+    'data': serializer.data
+            ^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 809, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 728, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:26:29,193 basehttp 13960 7136 "GET /api/transactions/suspicious/ HTTP/1.1" 500 186721
+ERROR 2026-06-27 23:26:29,293 log 13960 7748 Internal Server Error: /api/transactions/suspicious/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 67, in suspicious
+    'data': serializer.data
+            ^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 809, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 728, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:26:29,348 basehttp 13960 7748 "GET /api/transactions/suspicious/ HTTP/1.1" 500 186721
+INFO 2026-06-27 23:26:41,934 basehttp 13960 7136 "OPTIONS /api/kyc/profiles/stats/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:41,935 basehttp 13960 7748 "OPTIONS /api/kyc/profiles/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:41,935 basehttp 13960 2276 "OPTIONS /api/kyc/profiles/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:41,947 basehttp 13960 7748 "OPTIONS /api/kyc/profiles/stats/ HTTP/1.1" 200 0
+ERROR 2026-06-27 23:26:42,393 log 13960 2276 Internal Server Error: /api/kyc/profiles/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:42,423 log 13960 7136 Internal Server Error: /api/kyc/profiles/stats/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\kyc\views.py", line 136, in stats
+    total = queryset.count()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:42,473 basehttp 13960 2276 "GET /api/kyc/profiles/ HTTP/1.1" 500 202277
+ERROR 2026-06-27 23:26:42,510 basehttp 13960 7136 "GET /api/kyc/profiles/stats/ HTTP/1.1" 500 164784
+ERROR 2026-06-27 23:26:42,626 log 13960 2276 Internal Server Error: /api/kyc/profiles/stats/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\kyc\views.py", line 136, in stats
+    total = queryset.count()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:42,684 log 13960 7748 Internal Server Error: /api/kyc/profiles/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:42,686 basehttp 13960 2276 "GET /api/kyc/profiles/stats/ HTTP/1.1" 500 164784
+ERROR 2026-06-27 23:26:42,727 basehttp 13960 7748 "GET /api/kyc/profiles/ HTTP/1.1" 500 202277
+INFO 2026-06-27 23:26:45,382 basehttp 13960 7136 "OPTIONS /api/compliance/reports/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:45,383 basehttp 13960 13384 "OPTIONS /api/compliance/checks/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:45,383 basehttp 13960 2276 "OPTIONS /api/compliance/checks/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:45,383 basehttp 13960 4992 "OPTIONS /api/compliance/rules/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:45,384 basehttp 13960 7748 "OPTIONS /api/compliance/rules/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:45,384 basehttp 13960 13104 "OPTIONS /api/compliance/reports/ HTTP/1.1" 200 0
+ERROR 2026-06-27 23:26:45,587 log 13960 4992 Internal Server Error: /api/compliance/rules/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_rules
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_rules
+ERROR 2026-06-27 23:26:45,626 log 13960 7136 Internal Server Error: /api/compliance/reports/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_reports
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_reports
+ERROR 2026-06-27 23:26:45,690 log 13960 13104 Internal Server Error: /api/compliance/checks/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_checks
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_checks
+ERROR 2026-06-27 23:26:45,691 basehttp 13960 4992 "GET /api/compliance/rules/ HTTP/1.1" 500 202634
+ERROR 2026-06-27 23:26:45,735 basehttp 13960 7136 "GET /api/compliance/reports/ HTTP/1.1" 500 202760
+ERROR 2026-06-27 23:26:45,814 log 13960 7748 Internal Server Error: /api/compliance/rules/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_rules
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_rules
+ERROR 2026-06-27 23:26:45,817 basehttp 13960 13104 "GET /api/compliance/checks/ HTTP/1.1" 500 202697
+ERROR 2026-06-27 23:26:45,917 basehttp 13960 7748 "GET /api/compliance/rules/ HTTP/1.1" 500 202634
+ERROR 2026-06-27 23:26:45,978 log 13960 4992 Internal Server Error: /api/compliance/reports/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_reports
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_reports
+ERROR 2026-06-27 23:26:46,019 log 13960 7136 Internal Server Error: /api/compliance/checks/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: compliance_checks
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: compliance_checks
+ERROR 2026-06-27 23:26:46,061 basehttp 13960 4992 "GET /api/compliance/reports/ HTTP/1.1" 500 202760
+ERROR 2026-06-27 23:26:46,102 basehttp 13960 7136 "GET /api/compliance/checks/ HTTP/1.1" 500 202697
+INFO 2026-06-27 23:26:49,517 basehttp 13960 7136 "OPTIONS /api/audit-trail/ HTTP/1.1" 200 0
+INFO 2026-06-27 23:26:49,522 basehttp 13960 4992 "OPTIONS /api/audit-trail/ HTTP/1.1" 200 0
+ERROR 2026-06-27 23:26:49,654 log 13960 4992 Internal Server Error: /api/audit-trail/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: audit_trails
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: audit_trails
+ERROR 2026-06-27 23:26:49,693 basehttp 13960 4992 "GET /api/audit-trail/ HTTP/1.1" 500 202341
+ERROR 2026-06-27 23:26:49,818 log 13960 7136 Internal Server Error: /api/audit-trail/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: audit_trails
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: audit_trails
+ERROR 2026-06-27 23:26:49,850 basehttp 13960 7136 "GET /api/audit-trail/ HTTP/1.1" 500 202341
+ERROR 2026-06-27 23:26:53,458 log 13960 4992 Internal Server Error: /api/kyc/profiles/stats/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\kyc\views.py", line 136, in stats
+    total = queryset.count()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:53,551 log 13960 7136 Internal Server Error: /api/kyc/profiles/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:53,554 basehttp 13960 4992 "GET /api/kyc/profiles/stats/ HTTP/1.1" 500 164784
+ERROR 2026-06-27 23:26:53,637 basehttp 13960 7136 "GET /api/kyc/profiles/ HTTP/1.1" 500 202277
+ERROR 2026-06-27 23:26:53,731 log 13960 7748 Internal Server Error: /api/kyc/profiles/stats/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\kyc\views.py", line 136, in stats
+    total = queryset.count()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:53,794 basehttp 13960 7748 "GET /api/kyc/profiles/stats/ HTTP/1.1" 500 164784
+ERROR 2026-06-27 23:26:53,889 log 13960 4992 Internal Server Error: /api/kyc/profiles/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: kyc_profiles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: kyc_profiles
+ERROR 2026-06-27 23:26:53,963 basehttp 13960 4992 "GET /api/kyc/profiles/ HTTP/1.1" 500 202277
+ERROR 2026-06-27 23:26:55,562 log 13960 4992 Internal Server Error: /api/audit-trail/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: audit_trails
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: audit_trails
+ERROR 2026-06-27 23:26:55,588 basehttp 13960 4992 "GET /api/audit-trail/ HTTP/1.1" 500 202341
+ERROR 2026-06-27 23:26:55,722 log 13960 7748 Internal Server Error: /api/audit-trail/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: audit_trails
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 202, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 629, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\query.py", line 615, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: audit_trails
+ERROR 2026-06-27 23:26:55,754 basehttp 13960 7748 "GET /api/audit-trail/ HTTP/1.1" 500 202341
+WARNING 2026-06-27 23:27:27,240 log 13960 7748 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-27 23:27:27,241 basehttp 13960 7748 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+WARNING 2026-06-27 23:27:27,252 log 13960 7748 Not Found: /api/transactions/fraud-alerts/
+WARNING 2026-06-27 23:27:27,273 basehttp 13960 7748 "GET /api/transactions/fraud-alerts/ HTTP/1.1" 404 52
+ERROR 2026-06-27 23:27:27,373 log 13960 4992 Internal Server Error: /api/transactions/suspicious/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 67, in suspicious
+    'data': serializer.data
+            ^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 809, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 728, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:27:27,408 basehttp 13960 4992 "GET /api/transactions/suspicious/ HTTP/1.1" 500 186721
+ERROR 2026-06-27 23:27:27,535 log 13960 7748 Internal Server Error: /api/transactions/suspicious/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 67, in suspicious
+    'data': serializer.data
+            ^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 809, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 728, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:27:27,664 basehttp 13960 7748 "GET /api/transactions/suspicious/ HTTP/1.1" 500 186721
+INFO 2026-06-27 23:27:28,448 basehttp 13960 4992 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 174
+INFO 2026-06-27 23:27:28,464 basehttp 13960 4992 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 174
+ERROR 2026-06-27 23:27:28,545 log 13960 7748 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 213, in paginate_queryset
+    return list(self.page)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:27:28,564 basehttp 13960 7748 "GET /api/transactions/ HTTP/1.1" 500 184913
+ERROR 2026-06-27 23:27:28,785 log 13960 4992 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 213, in paginate_queryset
+    return list(self.page)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:27:28,826 basehttp 13960 4992 "GET /api/transactions/ HTTP/1.1" 500 184913
+ERROR 2026-06-27 23:27:43,460 log 13960 4992 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table transactions has no column named customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\views.py", line 48, in perform_create
+    serializer.save(
+    ~~~~~~~~~~~~~~~^
+        user=self.request.user,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        reference=reference,
+        ^^^^^^^^^^^^^^^^^^^^
+        ip_address=ip_address
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\serializers.py", line 1011, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\apps\transactions\models.py", line 101, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table transactions has no column named customer_id
+ERROR 2026-06-27 23:27:43,560 basehttp 13960 4992 "POST /api/transactions/ HTTP/1.1" 500 235353
+INFO 2026-06-27 23:27:59,370 basehttp 13960 7748 "GET /api/transactions/fraud_stats/ HTTP/1.1" 200 174
+ERROR 2026-06-27 23:27:59,543 log 13960 4992 Internal Server Error: /api/transactions/
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: transactions.customer_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\rest_framework\pagination.py", line 213, in paginate_queryset
+    return list(self.page)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Python.py\Hackaton project UBL\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: transactions.customer_id
+ERROR 2026-06-27 23:27:59,655 basehttp 13960 4992 "GET /api/transactions/ HTTP/1.1" 500 184913
+INFO 2026-06-27 23:29:40,824 autoreload 11636 13744 Watching for file changes with StatReloader

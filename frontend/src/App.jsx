@@ -11,6 +11,9 @@ import CaseManagement from "./pages/CaseManagement";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import AuditTrail from "./pages/AuditTrail";
+import ComplianceCenter from "./pages/ComplianceCenter";
+import KYCManagement from "./pages/KYCManagement";
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="/cases" element={<ProtectedRoute><CaseManagement /></ProtectedRoute>} />
         <Route path="/reports" element={<ProtectedRoute><Reports /></ProtectedRoute>} />
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+        <Route path="/audit-trail" element={<ProtectedRoute><AuditTrail /></ProtectedRoute>} />
+        <Route path="/compliance" element={<ProtectedRoute><ComplianceCenter /></ProtectedRoute>} />
+        <Route path="/kyc" element={<ProtectedRoute><KYCManagement /></ProtectedRoute>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

@@ -1,16 +1,13 @@
-"""Authentication URLs."""
-from django.urls import path
-from rest_framework_simplejwt.views import TokenRefreshView
-from .views import (
-    RegisterView, LoginView, LogoutView,
-    PasswordResetRequestView, PasswordResetConfirmView
-)
+"""Two-factor authentication URLs."""
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import TwoFactorSetupViewSet, TwoFactorTokenViewSet, TwoFactorBackupCodeViewSet
+
+router = DefaultRouter()
+router.register(r'setups', TwoFactorSetupViewSet, basename='two-factor-setup')
+router.register(r'tokens', TwoFactorTokenViewSet, basename='two-factor-token')
+router.register(r'backup-codes', TwoFactorBackupCodeViewSet, basename='two-factor-backup-code')
 
 urlpatterns = [
-    path('register/', RegisterView.as_view(), name='register'),
-    path('login/', LoginView.as_view(), name='login'),
-    path('logout/', LogoutView.as_view(), name='logout'),
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('password-reset/', PasswordResetRequestView.as_view(), name='password_reset'),
-    path('password-reset/confirm/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+    path('', include(router.urls)),
 ]

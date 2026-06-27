@@ -46,8 +46,15 @@ class Transaction(models.Model):
     # Fraud Detection Fields
     risk_level = models.CharField(max_length=10, choices=RiskLevel.choices, default=RiskLevel.LOW)
     fraud_probability = models.FloatField(default=0.0, help_text="Fraud probability percentage (0-100)")
-    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    device_type = models.CharField(max_length=20, choices=[('MOBILE', 'Mobile'), ('DESKTOP', 'Desktop'), ('ATM', 'ATM'), ('POS', 'POS')], default='MOBILE')
+    is_new_location = models.BooleanField(default=False)
     location = models.CharField(max_length=100, null=True, blank=True)
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    risk_score = models.IntegerField(default=0, help_text="Aggregated risk score (0-100)")
+
+    # KYC Fields
+    customer_id = models.CharField(max_length=50, null=True, blank=True)
+    kyc_status = models.CharField(max_length=20, null=True, blank=True)
 
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -61,7 +68,9 @@ class Transaction(models.Model):
             models.Index(fields=['user', 'status']),
             models.Index(fields=['created_at']),
             models.Index(fields=['risk_level']),
-            models.Index(fields=['fraud_probability']),
+            models.Index(fields=['fraud_probability', 'device_type']),
+            models.Index(fields=['is_new_location']),
+            models.Index(fields=['risk_score']),
         ]
 
     def __str__(self) -> str:
@@ -86,6 +95,9 @@ class Transaction(models.Model):
             if self.status == TransactionStatus.PENDING:
                 self.status = TransactionStatus.CLEAR
 
+        # Calculate risk score
+        self.risk_score = self.calculate_risk_score()
+
         super().save(*args, **kwargs)
 
         # ✅ FIX 2: Alert threshold lowered from 60 to 40
@@ -104,6 +116,53 @@ class Transaction(models.Model):
                     }
                 )
                 delattr(self, '_creating_alert')
+
+    def calculate_risk_score(self):
+        """Calculate risk score based on transaction features."""
+        score = 0
+
+        # Amount risk (0-60 pts)
+        if self.amount >= Decimal('300000'):   # PKR 300K+
+            score += 60
+        elif self.amount >= Decimal('100000'): # PKR 100K+
+            score += 40
+        elif self.amount >= Decimal('50000'):  # PKR 50K+
+            score += 20
+        elif self.amount >= Decimal('10000'):  # PKR 10K+
+            score += 5
+
+        # Device risk (0-15 pts)
+        device_risk = {
+            'ATM': 15,
+            'POS': 12,
+            'DESKTOP': 8,
+            'MOBILE': 5,
+        }
+        score += device_risk.get(self.device_type, 5)
+
+        # Location risk (0-15 pts)
+        if self.is_new_location:
+            score += 15
+
+        # Time-based risk (0-10 pts)
+        import datetime
+        current_hour = datetime.datetime.now().hour
+        if current_hour < 6 or current_hour >= 22:  # Late night 10PM-6AM
+            score += 10
+
+        # Transaction type risk (0-10 pts)
+        type_risk = {
+            'TRANSFER': 10,
+            'PAYMENT': 7,
+            'DEBIT': 5,
+            'CREDIT': 2,
+        }
+        score += type_risk.get(self.transaction_type, 5)
+
+        # ML probability (0-15 pts)
+        score += (self.fraud_probability / 100) * 15
+
+        return min(score, 100)
 
     def calculate_fraud_probability(self):
         """
@@ -152,7 +211,16 @@ class Transaction(models.Model):
         }
         risk_score += type_risk.get(str(self.transaction_type).upper(), 5)
 
-        # 4. ML NOISE — small only, cannot override amount (0-15 pts)
+        # 4. DEVICE TYPE RISK (0-10 pts)
+        device_risk = {
+            'ATM': 10,
+            'POS': 8,
+            'DESKTOP': 5,
+            'MOBILE': 3,
+        }
+        risk_score += device_risk.get(self.device_type.upper(), 5)
+
+        # 5. ML NOISE — small only, cannot override amount (0-15 pts)
         risk_score += random.randint(0, 15)
 
         return min(risk_score, 100)
@@ -163,6 +231,8 @@ class Transaction(models.Model):
             return 'SUSPICIOUS_AMOUNT'
         elif self.amount >= Decimal('100000'):
             return 'UNUSUAL_PATTERN'
+        elif self.is_new_location:
+            return 'HIGH_RISK_LOCATION'
         else:
             return 'MULTIPLE_ATTEMPTS'
 
@@ -203,5 +273,5 @@ class FraudAlert(models.Model):
         db_table = 'fraud_alerts'
         ordering = ['-created_at']
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Alert {self.id} - {self.alert_type}"

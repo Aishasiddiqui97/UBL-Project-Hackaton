@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     # Third Party
     'rest_framework',
     'rest_framework_simplejwt',
-    'rest_framework_simplejwt.token_blacklist',  # Add this for token blacklisting
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'django_filters',
     'drf_spectacular',
@@ -34,7 +34,14 @@ INSTALLED_APPS = [
     'apps.payments',
     'apps.transactions',
     'apps.notifications',
+    'apps.kyc',
+    'apps.cases',
+    'apps.compliance',
+    'apps.audit_trail',
 ]
+
+# ML Service URL
+ML_SERVICE_URL = config('ML_SERVICE_URL', default='http://localhost:8001')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

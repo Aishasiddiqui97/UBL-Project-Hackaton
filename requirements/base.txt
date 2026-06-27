@@ -24,5 +24,8 @@ python-decouple>=3.8
 python-dateutil>=2.8.2
 Pillow>=10.2.0
 
+# HTTP Requests
+requests>=2.31.0
+
 # Timezone
 pytz>=2023.3

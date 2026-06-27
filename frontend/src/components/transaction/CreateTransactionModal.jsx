@@ -11,10 +11,12 @@ const CreateTransactionModal = ({ isOpen, onClose, onSuccess }) => {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [fraudAlert, setFraudAlert] = useState(null);
 
     const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setFraudAlert(null);
     
     if (!formData.amount || !formData.account_number || !formData.description) {
       setError('Please fill in all required fields');
@@ -33,6 +35,17 @@ const CreateTransactionModal = ({ isOpen, onClose, onSuccess }) => {
       const response = await apiService.createTransaction(formData);
       console.log('Transaction created:', response);
       
+      // Check for fraud alert in response
+      const transaction = response.data || response;
+      if (transaction.fraud_reason) {
+        setFraudAlert({
+          reference: transaction.reference,
+          amount: transaction.amount,
+          reason: transaction.fraud_reason.details || transaction.fraud_reason.alert_type,
+          probability: transaction.fraud_reason.probability
+        });
+      }
+      
       // Reset form
       setFormData({
         transaction_type: 'DEBIT',
@@ -43,7 +56,9 @@ const CreateTransactionModal = ({ isOpen, onClose, onSuccess }) => {
       });
       
       onSuccess();
-      onClose();
+      if (!fraudAlert) {
+        onClose();
+      }
     } catch (error) {
       console.error('Failed to create transaction:', error);
       setError(error.message || 'Failed to create transaction');
@@ -128,6 +143,32 @@ const CreateTransactionModal = ({ isOpen, onClose, onSuccess }) => {
             fontSize: '14px'
           }}>
             {error}
+          </div>
+        )}
+
+        {fraudAlert && (
+          <div style={{ 
+            background: 'rgba(239,68,68,0.15)', 
+            border: '1px solid #ef4444', 
+            borderRadius: '8px', 
+            padding: '16px', 
+            marginBottom: '16px',
+            color: '#f87171'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+              <span style={{ fontSize: '20px' }}>🚨</span>
+              <h4 style={{ margin: 0, fontSize: '16px', fontWeight: '700', color: '#ef4444' }}>FRAUD DETECTED!</h4>
+            </div>
+            <div style={{ fontSize: '14px', marginBottom: '8px', lineHeight: '1.5' }}>
+              {fraudAlert.reason}
+            </div>
+            <div style={{ display: 'flex', gap: '16px', fontSize: '13px', color: '#fca5a5' }}>
+              <span><strong>Reference ID:</strong> {fraudAlert.reference}</span>
+              <span><strong>Amount:</strong> PKR {parseFloat(fraudAlert.amount).toLocaleString()}</span>
+            </div>
+            <div style={{ marginTop: '8px', fontSize: '12px', color: '#fca5a5' }}>
+              Fraud Probability: {fraudAlert.probability}%
+            </div>
           </div>
         )}
 

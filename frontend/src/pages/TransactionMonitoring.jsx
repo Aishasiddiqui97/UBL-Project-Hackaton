@@ -71,6 +71,7 @@ function TransactionMonitoring() {
               tx.risk_level === 'HIGH' ? 'High' : 'Low',
         date: new Date(tx.created_at).toLocaleDateString(),
         fraud_probability: tx.fraud_probability || 0,
+        fraud_reason: tx.fraud_reason ? (tx.fraud_reason.details || tx.fraud_reason.alert_type) : null,
         original: tx // Keep original data for details
       }));
       
@@ -255,7 +256,17 @@ function TransactionMonitoring() {
                     <td style={{ padding: "12px", color: "white" }}>{tx.account}</td>
                     <td style={{ padding: "12px", color: "white" }}>PKR {tx.amount.toLocaleString()}</td>
                     <td style={{ padding: "12px", color: "#94a3b8" }}>{tx.type}</td>
-                    <td style={{ padding: "12px" }}><StatusBadge status={tx.status} /></td>
+                    <td style={{ padding: "12px" }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                        <StatusBadge status={tx.status} />
+                        {tx.status === 'Flagged' && tx.fraud_reason && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#f87171', fontSize: '11px', fontWeight: '500' }}>
+                            <span>⚠</span>
+                            <span>{tx.fraud_reason}</span>
+                          </div>
+                        )}
+                      </div>
+                    </td>
                     <td style={{ padding: "12px" }}><RiskBadge risk={tx.risk} /></td>
                     <td style={{ padding: "12px" }}>
                       <span style={{ 

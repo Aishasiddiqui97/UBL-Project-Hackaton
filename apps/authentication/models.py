@@ -1,70 +1,132 @@
-"""Authentication models."""
+"""Two-factor authentication models."""
 from django.db import models
 from django.contrib.auth import get_user_model
-from django.utils.crypto import get_random_string
-from datetime import timedelta
-from django.utils import timezone
 
 User = get_user_model()
 
 
-class RefreshToken(models.Model):
-    """Refresh token model for JWT token management."""
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='refresh_tokens')
-    token = models.CharField(max_length=500, unique=True)
-    is_blacklisted = models.BooleanField(default=False)
+class TwoFactorMethod(models.TextChoices):
+    """Two-factor authentication method choices."""
+    EMAIL = 'EMAIL', 'Email'
+    SMS = 'SMS', 'SMS'
+    AUTH_APP = 'AUTH_APP', 'Authenticator App'
+    BACKUP_CODE = 'BACKUP_CODE', 'Backup Code'
+    HARDWARE_KEY = 'HARDWARE_KEY', 'Hardware Key'
+
+
+class TwoFactorSetup(models.Model):
+    """Two-factor authentication setup for users."""
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='two_factor_setup')
+    
+    # Method preferences
+    primary_method = models.CharField(max_length=20, choices=TwoFactorMethod.choices, default=TwoFactorMethod.AUTH_APP)
+    backup_methods = models.JSONField(default=list)  # Store list of backup method types
+    
+    # Settings
+    is_enabled = models.BooleanField(default=False)
+    is_required = models.BooleanField(default=False)
+    
+    # Email method
+    email_verified = models.BooleanField(default=False)
+    email = models.EmailField(null=True, blank=True)
+    
+    # SMS method
+    phone_number = models.CharField(max_length=20, null=True, blank=True)
+    phone_verified = models.BooleanField(default=False)
+    
+    # Authenticator app
+    secret_key = models.CharField(max_length=255, null=True, blank=True)
+    recovery_codes = models.JSONField(default=list, null=True, blank=True)
+    
+    # Hardware key (simplified)
+    hardware_key_id = models.CharField(max_length=255, null=True, blank=True)
+    
+    # Timing
+    last_used_at = models.DateTimeField(null=True, blank=True)
+    
+    # Methods
     created_at = models.DateTimeField(auto_now_add=True)
-    expires_at = models.DateTimeField()
+    updated_at = models.DateTimeField(auto_now=True)
     
     class Meta:
-        db_table = 'refresh_tokens'
-        ordering = ['-created_at']
-        indexes = [
-            models.Index(fields=['token']),
-            models.Index(fields=['user', 'is_blacklisted']),
-        ]
+        db_table = 'two_factor_setups'
     
     def __str__(self) -> str:
-        return f"Token for {self.user.email}"
+        return f"2FA - {self.user.email} - {self.primary_method}"
+
+
+class TwoFactorToken(models.Model):
+    """Two-factor authentication token for verification."""
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='two_factor_tokens')
     
-    @property
-    def is_expired(self) -> bool:
-        """Check if token is expired."""
-        return timezone.now() > self.expires_at
-
-
-class PasswordResetToken(models.Model):
-    """Password reset token model."""
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='password_reset_tokens')
-    token = models.CharField(max_length=64, unique=True)
+    # Token details
+    token = models.CharField(max_length=255)
+    method = models.CharField(max_length=20, choices=TwoFactorMethod.choices)
+    
+    # Metadata
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    user_agent = models.TextField(null=True, blank=True)
+    device = models.CharField(max_length=100, null=True, blank=True)
+    
+    # Timing
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+    used_at = models.DateTimeField(null=True, blank=True)
+    
+    # Status
     is_used = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    expires_at = models.DateTimeField()
     
     class Meta:
-        db_table = 'password_reset_tokens'
-        ordering = ['-created_at']
+        db_table = 'two_factor_tokens'
         indexes = [
-            models.Index(fields=['token']),
             models.Index(fields=['user', 'is_used']),
+            models.Index(fields=['expires_at']),
         ]
     
     def __str__(self) -> str:
-        return f"Password reset for {self.user.email}"
+        return f"Token {self.token[:8]}... - {self.method} - {self.user.email}"
+
+
+class TwoFactorLog(models.Model):
+    """Logging for two-factor authentication attempts."""
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='two_factor_logs')
     
-    @classmethod
-    def generate_token(cls, user: User) -> 'PasswordResetToken':
-        """Generate a password reset token."""
-        token = get_random_string(64)
-        expires_at = timezone.now() + timedelta(hours=1)
-        return cls.objects.create(user=user, token=token, expires_at=expires_at)
+    # Attempt details
+    action = models.CharField(max_length=50)  # attempt, success, failure, verify
+    method = models.CharField(max_length=20, choices=TwoFactorMethod.choices, null=True, blank=True)
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    user_agent = models.TextField(null=True, blank=True)
     
-    @property
-    def is_expired(self) -> bool:
-        """Check if token is expired."""
-        return timezone.now() > self.expires_at
+    # Error/Failure details
+    error_message = models.TextField(null=True, blank=True)
     
-    @property
-    def is_valid(self) -> bool:
-        """Check if token is valid."""
-        return not self.is_used and not self.is_expired
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        db_table = 'two_factor_logs'
+        indexes = [
+            models.Index(fields=['user', 'created_at']),
+            models.Index(fields=['created_at']),
+        ]
+    
+    def __str__(self) -> str:
+        return f"Log - {self.action} - {self.user.email} - {self.created_at}"
+
+
+class TwoFactorBackupCode(models.Model):
+    """Backup codes for two-factor authentication."""
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='backup_codes')
+    
+    code = models.CharField(max_length=10)
+    is_used = models.BooleanField(default=False)
+    used_at = models.DateTimeField(null=True, blank=True)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        db_table = 'two_factor_backup_codes'
+        unique_together = [('user', 'code')]
+    
+    def __str__(self) -> str:
+        return f"Backup Code: {self.code} - {self.user.email}"

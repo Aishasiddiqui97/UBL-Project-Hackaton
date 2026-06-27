@@ -1,8 +1,10 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
+import { clearAuth } from "../../utils/clearAuth";
 import {
   LayoutDashboard, ArrowLeftRight, ShieldAlert,
   Target, Bell, FolderOpen, FileText, Settings, LogOut, Shield,
+  Users, FileCheck, ClipboardList, AlertCircle,
 } from "lucide-react";
 
 const navItems = [
@@ -10,8 +12,11 @@ const navItems = [
   { path: "/transactions", label: "Transactions",        icon: ArrowLeftRight },
   { path: "/fraud-detection", label: "Fraud Detection", icon: ShieldAlert },
   { path: "/risk-scoring", label: "Risk Scoring",        icon: Target },
-  { path: "/alerts",       label: "Alerts",              icon: Bell },
+  { path: "/alerts",       label: "Alerts",              icon: Bell, badge: "live" },
   { path: "/cases",        label: "Case Management",     icon: FolderOpen },
+  { path: "/kyc",          label: "KYC",                 icon: Users },
+  { path: "/compliance",   label: "Compliance",          icon: FileCheck },
+  { path: "/audit-trail",  label: "Audit Trail",         icon: ClipboardList },
   { path: "/reports",      label: "Reports",             icon: FileText },
   { path: "/settings",     label: "Settings",            icon: Settings },
 ];
@@ -21,7 +26,7 @@ const Sidebar = ({ onClose }) => {
   const { navBg, surface, border, text, subtext, accent, isDark } = useTheme();
 
   const handleLogout = () => {
-    localStorage.removeItem("isAuthenticated");
+    clearAuth();
     navigate("/login");
   };
 
@@ -82,7 +87,7 @@ const Sidebar = ({ onClose }) => {
 
       {/* Nav Links */}
       <nav style={{ flex: 1, paddingTop: "4px", overflowY: "auto" }}>
-        {navItems.map(({ path, label, icon: Icon }) => (
+        {navItems.map(({ path, label, icon: Icon, badge }) => (
           <NavLink
             key={path}
             to={path}
@@ -99,6 +104,7 @@ const Sidebar = ({ onClose }) => {
               borderLeft: isActive ? "3px solid #38bdf8" : "3px solid transparent",
               transition: "all 0.15s",
               margin: "1px 0",
+              position: "relative",
             })}
             onMouseEnter={e => {
               if (!e.currentTarget.style.borderLeftColor.includes("38bdf8")) {
@@ -116,12 +122,57 @@ const Sidebar = ({ onClose }) => {
           >
             <Icon size={15} />
             <span>{label}</span>
+            {badge === "live" && (
+              <span style={{
+                marginLeft: "auto",
+                background: "#22c55e",
+                color: "#fff",
+                fontSize: "9px",
+                padding: "2px 6px",
+                borderRadius: "10px",
+                fontWeight: "600",
+                letterSpacing: "0.05em",
+              }}>
+                LIVE
+              </span>
+            )}
           </NavLink>
         ))}
       </nav>
 
+      {/* Threat Level Widget */}
+      <div style={{
+        padding: "16px 18px",
+        borderTop: `1px solid ${border}`,
+        borderBottom: `1px solid ${border}`,
+        margin: "0 0 0 0",
+      }}>
+        <div style={{
+          background: isDark ? "#1e293b" : "#f8fafc",
+          borderRadius: "8px",
+          padding: "12px",
+          display: "flex",
+          alignItems: "center",
+          gap: "10px",
+        }}>
+          <div style={{
+            background: "#f59e0b18",
+            borderRadius: "6px",
+            padding: "6px",
+            display: "flex",
+            alignItems: "center",
+          }}>
+            <AlertCircle size={14} color="#f59e0b" />
+          </div>
+          <div>
+            <div style={{ color: subtext, fontSize: "10px", letterSpacing: "0.05em" }}>THREAT LEVEL</div>
+            <div style={{ color: "#f59e0b", fontSize: "12px", fontWeight: "700" }}>MEDIUM</div>
+          </div>
+        </div>
+      </div>
+
       {/* Logout */}
-      <div style={{ padding: "16px 18px", borderTop: `1px solid ${border}` }}>
+      <div style={{ padding: "16px 18px" }}>
         <button
           onClick={handleLogout}
           style={{

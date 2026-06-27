@@ -20,6 +20,10 @@ def api_root(request):
             'payments': '/api/payments/',
             'transactions': '/api/transactions/',
             'notifications': '/api/notifications/',
+            'kyc': '/api/kyc/',
+            'cases': '/api/cases/',
+            'compliance': '/api/compliance/',
+            'audit_trail': '/api/audit-trail/',
             'documentation': '/api/docs/',
             'admin': '/admin/'
         }
@@ -63,6 +67,12 @@ urlpatterns = [
     path('api/payments/', include('apps.payments.urls')),
     path('api/transactions/', include('apps.transactions.urls')),
     path('api/notifications/', include('apps.notifications.urls')),
+    
+    # New apps
+    path('api/kyc/', include('apps.kyc.urls')),
+    path('api/cases/', include('apps.cases.urls')),
+    path('api/compliance/', include('apps.compliance.urls')),
+    path('api/audit-trail/', include('apps.audit_trail.urls')),
 ]
 
 if settings.DEBUG:

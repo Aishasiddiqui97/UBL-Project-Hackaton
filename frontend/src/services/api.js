@@ -5,6 +5,8 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000
 class ApiService {
   constructor() {
     this.baseURL = API_BASE_URL;
+    this.isRefreshing = false;
+    this.refreshQueue = [];
   }
 
   // Helper method to get auth headers
@@ -22,7 +24,57 @@ class ApiService {
     return headers;
   }
 
-  // Generic API call method
+  // Save auth data
+  saveAuth(accessToken, refreshToken, user) {
+    localStorage.setItem('access_token', accessToken);
+    localStorage.setItem('refresh_token', refreshToken);
+    localStorage.setItem('isAuthenticated', 'true');
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+    }
+  }
+
+  // Clear auth data
+  clearAuth() {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('isAuthenticated');
+    localStorage.removeItem('user');
+  }
+
+  // Refresh token
+  async refreshToken() {
+    const refreshToken = localStorage.getItem('refresh_token');
+    if (!refreshToken) {
+      throw new Error('No refresh token available');
+    }
+
+    try {
+      const response = await fetch(`${this.baseURL}/auth/token/refresh/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ refresh: refreshToken }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Token refresh failed');
+      }
+
+      const data = await response.json();
+      localStorage.setItem('access_token', data.access);
+      if (data.refresh) {
+        localStorage.setItem('refresh_token', data.refresh);
+      }
+      return data;
+    } catch (error) {
+      this.clearAuth();
+      throw error;
+    }
+  }
+
+  // Generic API call method with automatic token refresh
   async apiCall(endpoint, options = {}) {
     const url = `${this.baseURL}${endpoint}`;
     const config = {
@@ -34,6 +86,30 @@ class ApiService {
 
     try {
       const response = await fetch(url, config);
+      
+      // If 401, try to refresh token
+      if (response.status === 401 && !endpoint.includes('/auth/')) {
+        if (!this.isRefreshing) {
+          this.isRefreshing = true;
+          try {
+            await this.refreshToken();
+            // Retry the original request
+            config.headers = this.getAuthHeaders();
+            const retryResponse = await fetch(url, config);
+            const retryData = await retryResponse.json();
+            
+            if (!retryResponse.ok) {
+              const errorMessage = retryData.message || retryData.detail || `HTTP error! status: ${retryResponse.status}`;
+              throw new Error(errorMessage);
+            }
+            
+            return retryData.data ? retryData : retryData;
+          } finally {
+            this.isRefreshing = false;
+          }
+        }
+      }
+
       const data = await response.json();
 
       console.log('API Response:', { status: response.status, data });
@@ -87,22 +163,18 @@ class ApiService {
   }
 
   async logout() {
-    const refresh_token = localStorage.getItem('refresh_token');
-    return this.apiCall('/auth/logout/', {
-      method: 'POST',
-      body: JSON.stringify({ refresh_token })
-    });
+    const refreshToken = localStorage.getItem('refresh_token');
+    try {
+      await this.apiCall('/auth/logout/', {
+        method: 'POST',
+        body: JSON.stringify({ refresh_token: refreshToken })
+      });
+    } finally {
+      this.clearAuth();
+    }
   }
 
-  async refreshToken() {
-    const refresh_token = localStorage.getItem('refresh_token');
-    return this.apiCall('/auth/token/refresh/', {
-      method: 'POST',
-      body: JSON.stringify({ refresh: refresh_token })
-    });
-  }
-
-  // User endpoints - FIXED: use correct endpoint
+  // User endpoints
   async getCurrentUser() {
     return this.apiCall('/users/me/');
   }
@@ -166,6 +238,14 @@ class ApiService {
     });
   }
   
+  // Analyze transaction for fraud using ML
+  async analyzeTransaction(transactionData) {
+    return this.apiCall('/transactions/analyze/', {
+      method: 'POST',
+      body: JSON.stringify(transactionData)
+    });
+  }
+  
   // Fraud Detection endpoints
   async getFraudAlerts() {
     return this.apiCall('/transactions/fraud-alerts/');
@@ -198,6 +278,119 @@ class ApiService {
     return this.apiCall(`/notifications/${notificationId}/mark_read/`, {
       method: 'POST'
     });
+  }
+
+  // Cases endpoints
+  async getCases() {
+    return this.apiCall('/cases/');
+  }
+
+  async getCase(caseId) {
+    return this.apiCall(`/cases/${caseId}/`);
+  }
+
+  async createCase(caseData) {
+    return this.apiCall('/cases/', {
+      method: 'POST',
+      body: JSON.stringify(caseData)
+    });
+  }
+
+  async updateCase(caseId, caseData) {
+    return this.apiCall(`/cases/${caseId}/`, {
+      method: 'PATCH',
+      body: JSON.stringify(caseData)
+    });
+  }
+
+  async assignCase(caseId, userId) {
+    return this.apiCall(`/cases/${caseId}/assign/`, {
+      method: 'POST',
+      body: JSON.stringify({ user_id: userId })
+    });
+  }
+
+  async updateCaseStatus(caseId, status, resolution = '') {
+    return this.apiCall(`/cases/${caseId}/update_status/`, {
+      method: 'POST',
+      body: JSON.stringify({ status, resolution })
+    });
+  }
+
+  async addCaseComment(caseId, content) {
+    return this.apiCall(`/cases/${caseId}/add_comment/`, {
+      method: 'POST',
+      body: JSON.stringify({ content })
+    });
+  }
+
+  async getCaseStats() {
+    return this.apiCall('/cases/stats/');
+  }
+
+  async getMyCases() {
+    return this.apiCall('/cases/my_cases/');
+  }
+
+  // KYC endpoints
+  async getKYCProfiles() {
+    return this.apiCall('/kyc/profiles/');
+  }
+
+  async getKYCProfile(profileId) {
+    return this.apiCall(`/kyc/profiles/${profileId}/`);
+  }
+
+  async createKYCProfile(profileData) {
+    return this.apiCall('/kyc/profiles/', {
+      method: 'POST',
+      body: JSON.stringify(profileData)
+    });
+  }
+
+  async reviewKYCProfile(profileId, reviewData) {
+    return this.apiCall(`/kyc/profiles/${profileId}/review/`, {
+      method: 'POST',
+      body: JSON.stringify(reviewData)
+    });
+  }
+
+  async getKYCStats() {
+    return this.apiCall('/kyc/profiles/stats/');
+  }
+
+  async getMyKYC() {
+    return this.apiCall('/kyc/profiles/my_kyc/');
+  }
+
+  // Compliance endpoints
+  async getComplianceRules() {
+    return this.apiCall('/compliance/rules/');
+  }
+
+  async getComplianceChecks() {
+    return this.apiCall('/compliance/checks/');
+  }
+
+  async getComplianceReports() {
+    return this.apiCall('/compliance/reports/');
+  }
+
+  async getComplianceStats() {
+    return this.apiCall('/compliance/checks/stats/');
+  }
+
+  // Audit Trail endpoints
+  async getAuditTrail() {
+    return this.apiCall('/audit-trail/');
+  }
+
+  async getAuditStats() {
+    return this.apiCall('/audit-trail/stats/');
+  }
+
+  async exportAuditTrail() {
+    return this.apiCall('/audit-trail/export/');
   }
 }
 

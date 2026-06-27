@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Cache - AFCIP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .status {
+            font-size: 18px;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+        li {
+            margin: 10px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Clear Browser Cache</h1>
+        
+        <div id="status" class="status info">
+            Click the button below to clear all cached data
+        </div>
+
+        <div id="countdown" class="countdown" style="display: none;"></div>
+
+        <button onclick="clearAllCache()">Clear Cache & Reload</button>
+        <button onclick="goToHome()">Go to Home</button>
+
+        <div style="margin-top: 30px;">
+            <h3>What will be cleared:</h3>
+            <ul>
+                <li>✅ Local Storage</li>
+                <li>✅ Session Storage</li>
+                <li>✅ Authentication Tokens</li>
+                <li>✅ User Data</li>
+                <li>✅ Cached API Responses</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function clearAllCache() {
+            const statusDiv = document.getElementById('status');
+            const countdownDiv = document.getElementById('countdown');
+            
+            try {
+                // Clear localStorage
+                localStorage.clear();
+                
+                // Clear sessionStorage
+                sessionStorage.clear();
+                
+                // Clear specific items if they exist
+                const itemsToClear = [
+                    'access_token',
+                    'refresh_token',
+                    'user',
+                    'token',
+                    'authToken',
+                    'userData'
+                ];
+                
+                itemsToClear.forEach(item => {
+                    localStorage.removeItem(item);
+                    sessionStorage.removeItem(item);
+                });
+
+                // Try to clear IndexedDB
+                if (window.indexedDB) {
+                    const dbs = ['keyval-store', 'localforage', 'app-cache'];
+                    dbs.forEach(dbName => {
+                        try {
+                            window.indexedDB.deleteDatabase(dbName);
+                        } catch (e) {
+                            console.log('Could not delete DB:', dbName);
+                        }
+                    });
+                }
+
+                statusDiv.className = 'status success';
+                statusDiv.innerHTML = '✅ Cache cleared successfully!<br>Redirecting to home page...';
+                
+                // Show countdown
+                countdownDiv.style.display = 'block';
+                let count = 3;
+                countdownDiv.textContent = count;
+                
+                const interval = setInterval(() => {
+                    count--;
+                    if (count > 0) {
+                        countdownDiv.textContent = count;
+                    } else {
+                        clearInterval(interval);
+                        window.location.href = '/';
+                    }
+                }, 1000);
+
+            } catch (error) {
+                statusDiv.className = 'status';
+                statusDiv.style.background = '#f8d7da';
+                statusDiv.style.color = '#721c24';
+                statusDiv.innerHTML = '❌ Error clearing cache: ' + error.message;
+            }
+        }
+
+        function goToHome() {
+            window.location.href = '/';
+        }
+
+        // Auto-clear if URL has ?clear=true parameter
+        if (window.location.search.includes('clear=true')) {
+            clearAllCache();
+        }
+    </script>
+</body>
+</html>

@@ -1909,3 +1909,13 @@ INFO 2026-06-27 22:15:47,965 autoreload 8116 8896 Watching for file changes with
 INFO 2026-06-27 22:31:54,532 autoreload 5508 7992 Watching for file changes with StatReloader
 INFO 2026-06-27 22:32:36,355 autoreload 3756 3840 Watching for file changes with StatReloader
 INFO 2026-06-27 22:37:33,778 autoreload 5744 13816 Watching for file changes with StatReloader
+INFO 2026-06-27 22:49:06,022 autoreload 11592 10604 Watching for file changes with StatReloader
+INFO 2026-06-27 23:12:00,178 autoreload 5448 12300 Watching for file changes with StatReloader
+INFO 2026-06-27 23:12:06,861 basehttp 5448 7716 "GET / HTTP/1.1" 302 0
+INFO 2026-06-27 23:12:07,159 basehttp 5448 7716 "GET /api/docs/ HTTP/1.1" 200 4644
+INFO 2026-06-27 23:12:09,418 basehttp 5448 7716 "GET /api/schema/ HTTP/1.1" 200 441867
+INFO 2026-06-27 23:12:23,643 basehttp 5448 13108 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-06-27 23:12:24,690 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:12:24,745 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
+WARNING 2026-06-27 23:12:28,954 log 5448 13108 Not Found: /api/auth/login/
+WARNING 2026-06-27 23:12:28,956 basehttp 5448 13108 "POST /api/auth/login/ HTTP/1.1" 404 11506
